@@ -3,7 +3,7 @@
 # React + Vite
 
 ## About Project
-Ready template for a coffee shop website called golden coffee
+An online coffee shop website for selling all kinds of coffees
 
 ### See <a href='https://goldencoffee.liara.run'>Demo</a>
 
