@@ -14,16 +14,16 @@ export default function Comments() {
 
     const showProductAlert = () => {
         Swal.fire({
-            text: 'قهوه اسپرسو بن مانو مدل پریسکا 250 گرمی',
-            confirmButtonText: 'مشاهده کردم'
+            text: 'Ben Mano espresso coffee Prisca model 250g',
+            confirmButtonText: 'I see'
         })
     }
 
     const showCommentReplyAlert = () => {
         Swal.fire({
-            text: 'پاسخ شما برای دیدگاه مورد نظر با موفقیت ثبت شد',
+            text: 'Your reply to the comment has been registered successfully',
             icon: 'success',
-            confirmButtonText: "متوجه شدم!"
+            confirmButtonText: "Got it!"
         })
 
         setShowCommentReplyModal(false)
@@ -31,9 +31,9 @@ export default function Comments() {
 
     const showEditCommentAlert = () => {
         Swal.fire({
-            text: 'دیدگاه مورد نظر با موفقیت ویرایش شد',
+            text: 'Comment updated successfully',
             icon: 'success',
-            confirmButtonText: "متوجه شدم!"
+            confirmButtonText: "Got it!"
         })
 
         setShowEditCommentModal(false)
@@ -41,17 +41,17 @@ export default function Comments() {
 
     const showRemoveCommentAlert = () => {
         Swal.fire({
-            text: 'آیا از حذف دیدگاه مورد نظر مطمئن هستی؟',
+            text: 'Are you sure you want to delete this comment?',
             icon: 'question',
-            confirmButtonText: 'بله',
+            confirmButtonText: 'Yes',
             showCancelButton: true,
-            cancelButtonText: 'خیر'
+            cancelButtonText: 'No'
         }).then(res => {
             if (res.isConfirmed) {
                 Swal.fire({
-                    text: 'دیدگاه مورد نظر با موفقیت حذف شد',
+                    text: 'Comment deleted successfully',
                     icon: 'success',
-                    confirmButtonText: 'متوجه شدم!',
+                    confirmButtonText: 'Got it!',
                 })
             }
         })
@@ -59,17 +59,17 @@ export default function Comments() {
 
     const showRemoveCommentReplyAlert = () => {
         Swal.fire({
-            text: 'آیا از حذف پاسخ مورد نظر مطمئن هستی؟',
+            text: 'Are you sure you want to delete this reply?',
             icon: 'question',
-            confirmButtonText: 'بله',
+            confirmButtonText: 'Yes',
             showCancelButton: true,
-            cancelButtonText: 'خیر'
+            cancelButtonText: 'No'
         }).then(res => {
             if (res.isConfirmed) {
                 Swal.fire({
-                    text: 'پاسخ مورد نظر با موفقیت حذف شد',
+                    text: 'Reply deleted successfully',
                     icon: 'success',
-                    confirmButtonText: 'متوجه شدم!',
+                    confirmButtonText: 'Got it!',
                 })
             }
         })
@@ -77,99 +77,99 @@ export default function Comments() {
 
     return (
         <>
-            <TitlePage title='مدیریت دیدگاه ها' />
+            <TitlePage title='Comment Management' />
             <section className='comments-container'>
                 <AdminPanelTableTitle
-                    title='دیدگاه ها'
+                    title='Comments'
                     isList={true}
                 >
                     <DataTable
                         headerItemCount={6}
-                        headerItemTitle={['کاربر', "کالا", 'دیدگاه', 'پاسخ', "ویرایش", 'حذف']}
+                        headerItemTitle={['User', "Product", 'Comment', 'Reply', "Edit", 'Delete']}
                         sectionsTableWidth={['w-32 sm:w-48 md:w-72 ipad:60 lg:w-80 xl:w-96', 'w-10 sm:w-12 md:w-14 ipad:w-10 lg:w-12 xl:w-14', 'w-10 sm:w-12 md:w-14 ipad:w-10 lg:w-12 xl:w-14', 'w-7 sm:w-10 md:w-14 ipad:w-7 lg:w-12 xl:w-14', 'w-10 sm:w-12 md:w-16 ipad:w-11 lg:w-12 xl:w-14', 'w-8 sm:w-10 md:w-14 ipad:w-10 lg:w-12 xl:w-14']}
                     >
                         <tr>
                             <td className='w-12 md:w-14 text-xs text-white bg-green-500'>1</td>
                             <td className='line-clamp-2 w-32 sm:w-48 md:w-72 ipad:60 lg:w-80 xl:w-96'>
-                                هادی حیدری آذر
+                                Hadi Heidari Azar
                             </td>
                             <td className='w-10 sm:w-12 md:w-14 ipad:w-10 lg:w-12 xl:w-14'>
-                                <button className='bg-blue-500 hover:bg-blue-600 text-white text-xs font-dana-medium px-1 sm:px-2 py-1 sm:py-1.5 rounded transition-colors' onClick={showProductAlert}> مشاهده </button>
+                                <button className='bg-blue-500 hover:bg-blue-600 text-white text-xs font-dana-medium px-1 sm:px-2 py-1 sm:py-1.5 rounded transition-colors' onClick={showProductAlert}> View </button>
                             </td>
                             <td className='w-10 sm:w-12 md:w-14 ipad:w-10 lg:w-12 xl:w-14'>
-                                <button className='bg-blue-500 hover:bg-blue-600 text-white text-xs font-dana-medium px-1 sm:px-2 py-1 sm:py-1.5 rounded transition-colors' onClick={() => setShowCommentModal(true)}> مشاهده </button>
+                                <button className='bg-blue-500 hover:bg-blue-600 text-white text-xs font-dana-medium px-1 sm:px-2 py-1 sm:py-1.5 rounded transition-colors' onClick={() => setShowCommentModal(true)}> View </button>
                             </td>
                             <td className='w-7 sm:w-10 md:w-14 ipad:w-7 lg:w-12 xl:w-14'>
-                                <button className='bg-green-500 hover:bg-green-600 text-white text-xs font-dana-medium px-1 sm:px-2 py-1 sm:py-1.5 rounded transition-colors' onClick={() => setShowCommentReplyModal(true)}> پاسخ </button>
+                                <button className='bg-green-500 hover:bg-green-600 text-white text-xs font-dana-medium px-1 sm:px-2 py-1 sm:py-1.5 rounded transition-colors' onClick={() => setShowCommentReplyModal(true)}> Reply </button>
                             </td>
                             <td className='w-10 sm:w-12 md:w-16 ipad:w-11 lg:w-12 xl:w-14'>
-                                <button className='bg-green-500 hover:bg-green-600 text-white text-xs font-dana-medium px-1 sm:px-2 py-1 sm:py-1.5 rounded transition-colors' onClick={() => setShowEditCommentModal(true)}> ویرایش </button>
+                                <button className='bg-green-500 hover:bg-green-600 text-white text-xs font-dana-medium px-1 sm:px-2 py-1 sm:py-1.5 rounded transition-colors' onClick={() => setShowEditCommentModal(true)}> Edit </button>
                             </td>
                             <td className='w-8 sm:w-10 md:w-14 ipad:w-10 lg:w-12 xl:w-14'>
-                                <button className='bg-rose-500 hover:bg-rose-600 text-white text-xs font-dana-medium px-1 sm:px-2 py-1 sm:py-1.5 rounded transition-colors' onClick={showRemoveCommentAlert}> حذف </button>
+                                <button className='bg-rose-500 hover:bg-rose-600 text-white text-xs font-dana-medium px-1 sm:px-2 py-1 sm:py-1.5 rounded transition-colors' onClick={showRemoveCommentAlert}> Delete </button>
                             </td>
                         </tr>
                         <tr>
                             <td className='w-12 md:w-14 text-xs text-white bg-green-500'>1</td>
                             <td className='line-clamp-2 w-32 sm:w-48 md:w-72 ipad:60 lg:w-80 xl:w-96'>
-                                فاطمه سلیمی
+                                Fatemeh Salimi
                             </td>
                             <td className='w-10 sm:w-12 md:w-14 ipad:w-10 lg:w-12 xl:w-14'>
-                                <button className='bg-blue-500 hover:bg-blue-600 text-white text-xs font-dana-medium px-1 sm:px-2 py-1 sm:py-1.5 rounded transition-colors' onClick={showProductAlert}> مشاهده </button>
+                                <button className='bg-blue-500 hover:bg-blue-600 text-white text-xs font-dana-medium px-1 sm:px-2 py-1 sm:py-1.5 rounded transition-colors' onClick={showProductAlert}> View </button>
                             </td>
                             <td className='w-10 sm:w-12 md:w-14 ipad:w-10 lg:w-12 xl:w-14'>
-                                <button className='bg-blue-500 hover:bg-blue-600 text-white text-xs font-dana-medium px-1 sm:px-2 py-1 sm:py-1.5 rounded transition-colors' onClick={() => setShowCommentModal(true)}> مشاهده </button>
+                                <button className='bg-blue-500 hover:bg-blue-600 text-white text-xs font-dana-medium px-1 sm:px-2 py-1 sm:py-1.5 rounded transition-colors' onClick={() => setShowCommentModal(true)}> View </button>
                             </td>
                             <td className='w-7 sm:w-10 md:w-14 ipad:w-7 lg:w-12 xl:w-14'>
-                                <button className='bg-green-500 hover:bg-green-600 text-white text-xs font-dana-medium px-1 sm:px-2 py-1 sm:py-1.5 rounded transition-colors' onClick={() => setShowCommentReplyModal(true)}> پاسخ </button>
+                                <button className='bg-green-500 hover:bg-green-600 text-white text-xs font-dana-medium px-1 sm:px-2 py-1 sm:py-1.5 rounded transition-colors' onClick={() => setShowCommentReplyModal(true)}> Reply </button>
                             </td>
                             <td className='w-10 sm:w-12 md:w-16 ipad:w-11 lg:w-12 xl:w-14'>
-                                <button className='bg-green-500 hover:bg-green-600 text-white text-xs font-dana-medium px-1 sm:px-2 py-1 sm:py-1.5 rounded transition-colors' onClick={() => setShowEditCommentModal(true)}> ویرایش </button>
+                                <button className='bg-green-500 hover:bg-green-600 text-white text-xs font-dana-medium px-1 sm:px-2 py-1 sm:py-1.5 rounded transition-colors' onClick={() => setShowEditCommentModal(true)}> Edit </button>
                             </td>
                             <td className='w-8 sm:w-10 md:w-14 ipad:w-10 lg:w-12 xl:w-14'>
-                                <button className='bg-rose-500 hover:bg-rose-600 text-white text-xs font-dana-medium px-1 sm:px-2 py-1 sm:py-1.5 rounded transition-colors' onClick={showRemoveCommentAlert}> حذف </button>
+                                <button className='bg-rose-500 hover:bg-rose-600 text-white text-xs font-dana-medium px-1 sm:px-2 py-1 sm:py-1.5 rounded transition-colors' onClick={showRemoveCommentAlert}> Delete </button>
                             </td>
                         </tr>
                         <tr>
                             <td className='w-12 md:w-14 text-xs text-white bg-rose-500'>1</td>
                             <td className='line-clamp-2 w-32 sm:w-48 md:w-72 ipad:60 lg:w-80 xl:w-96'>
-                                پوریا عزیزی
+                                Pouria Azizi
                             </td>
                             <td className='w-10 sm:w-12 md:w-14 ipad:w-10 lg:w-12 xl:w-14'>
-                                <button className='bg-blue-500 hover:bg-blue-600 text-white text-xs font-dana-medium px-1 sm:px-2 py-1 sm:py-1.5 rounded transition-colors' onClick={showProductAlert}> مشاهده </button>
+                                <button className='bg-blue-500 hover:bg-blue-600 text-white text-xs font-dana-medium px-1 sm:px-2 py-1 sm:py-1.5 rounded transition-colors' onClick={showProductAlert}> View </button>
                             </td>
                             <td className='w-10 sm:w-12 md:w-14 ipad:w-10 lg:w-12 xl:w-14'>
-                                <button className='bg-blue-500 hover:bg-blue-600 text-white text-xs font-dana-medium px-1 sm:px-2 py-1 sm:py-1.5 rounded transition-colors' onClick={() => setShowCommentModal(true)}> مشاهده </button>
+                                <button className='bg-blue-500 hover:bg-blue-600 text-white text-xs font-dana-medium px-1 sm:px-2 py-1 sm:py-1.5 rounded transition-colors' onClick={() => setShowCommentModal(true)}> View </button>
                             </td>
                             <td className='w-7 sm:w-10 md:w-14 ipad:w-7 lg:w-12 xl:w-14'>
-                                <button className='bg-green-500 hover:bg-green-600 text-white text-xs font-dana-medium px-1 sm:px-2 py-1 sm:py-1.5 rounded transition-colors' onClick={() => setShowCommentReplyModal(true)}> پاسخ </button>
+                                <button className='bg-green-500 hover:bg-green-600 text-white text-xs font-dana-medium px-1 sm:px-2 py-1 sm:py-1.5 rounded transition-colors' onClick={() => setShowCommentReplyModal(true)}> Reply </button>
                             </td>
                             <td className='w-10 sm:w-12 md:w-16 ipad:w-11 lg:w-12 xl:w-14'>
-                                <button className='bg-green-500 hover:bg-green-600 text-white text-xs font-dana-medium px-1 sm:px-2 py-1 sm:py-1.5 rounded transition-colors' onClick={() => setShowEditCommentModal(true)}> ویرایش </button>
+                                <button className='bg-green-500 hover:bg-green-600 text-white text-xs font-dana-medium px-1 sm:px-2 py-1 sm:py-1.5 rounded transition-colors' onClick={() => setShowEditCommentModal(true)}> Edit </button>
                             </td>
                             <td className='w-8 sm:w-10 md:w-14 ipad:w-10 lg:w-12 xl:w-14'>
-                                <button className='bg-rose-500 hover:bg-rose-600 text-white text-xs font-dana-medium px-1 sm:px-2 py-1 sm:py-1.5 rounded transition-colors' onClick={showRemoveCommentAlert}> حذف </button>
+                                <button className='bg-rose-500 hover:bg-rose-600 text-white text-xs font-dana-medium px-1 sm:px-2 py-1 sm:py-1.5 rounded transition-colors' onClick={showRemoveCommentAlert}> Delete </button>
                             </td>
                         </tr>
                         <tr>
                             <td className='w-12 md:w-14 text-xs text-white bg-green-500'>1</td>
                             <td className='line-clamp-2 w-32 sm:w-48 md:w-72 ipad:60 lg:w-80 xl:w-96'>
-                                قدیر یلمه
+                                Ghadir Yelmeh
                             </td>
                             <td className='w-10 sm:w-12 md:w-14 ipad:w-10 lg:w-12 xl:w-14'>
-                                <button className='bg-blue-500 hover:bg-blue-600 text-white text-xs font-dana-medium px-1 sm:px-2 py-1 sm:py-1.5 rounded transition-colors' onClick={showProductAlert}> مشاهده </button>
+                                <button className='bg-blue-500 hover:bg-blue-600 text-white text-xs font-dana-medium px-1 sm:px-2 py-1 sm:py-1.5 rounded transition-colors' onClick={showProductAlert}> View </button>
                             </td>
                             <td className='w-10 sm:w-12 md:w-14 ipad:w-10 lg:w-12 xl:w-14'>
-                                <button className='bg-blue-500 hover:bg-blue-600 text-white text-xs font-dana-medium px-1 sm:px-2 py-1 sm:py-1.5 rounded transition-colors' onClick={() => setShowCommentModal(true)}> مشاهده </button>
+                                <button className='bg-blue-500 hover:bg-blue-600 text-white text-xs font-dana-medium px-1 sm:px-2 py-1 sm:py-1.5 rounded transition-colors' onClick={() => setShowCommentModal(true)}> View </button>
                             </td>
                             <td className='w-7 sm:w-10 md:w-14 ipad:w-7 lg:w-12 xl:w-14'>
-                                <button className='bg-green-500 hover:bg-green-600 text-white text-xs font-dana-medium px-1 sm:px-2 py-1 sm:py-1.5 rounded transition-colors' onClick={() => setShowCommentReplyModal(true)}> پاسخ </button>
+                                <button className='bg-green-500 hover:bg-green-600 text-white text-xs font-dana-medium px-1 sm:px-2 py-1 sm:py-1.5 rounded transition-colors' onClick={() => setShowCommentReplyModal(true)}> Reply </button>
                             </td>
                             <td className='w-10 sm:w-12 md:w-16 ipad:w-11 lg:w-12 xl:w-14'>
-                                <button className='bg-green-500 hover:bg-green-600 text-white text-xs font-dana-medium px-1 sm:px-2 py-1 sm:py-1.5 rounded transition-colors' onClick={() => setShowEditCommentModal(true)}> ویرایش </button>
+                                <button className='bg-green-500 hover:bg-green-600 text-white text-xs font-dana-medium px-1 sm:px-2 py-1 sm:py-1.5 rounded transition-colors' onClick={() => setShowEditCommentModal(true)}> Edit </button>
                             </td>
                             <td className='w-8 sm:w-10 md:w-14 ipad:w-10 lg:w-12 xl:w-14'>
-                                <button className='bg-rose-500 hover:bg-rose-600 text-white text-xs font-dana-medium px-1 sm:px-2 py-1 sm:py-1.5 rounded transition-colors' onClick={showRemoveCommentAlert}> حذف </button>
+                                <button className='bg-rose-500 hover:bg-rose-600 text-white text-xs font-dana-medium px-1 sm:px-2 py-1 sm:py-1.5 rounded transition-colors' onClick={showRemoveCommentAlert}> Delete </button>
                             </td>
                         </tr>
                     </DataTable>
@@ -178,77 +178,77 @@ export default function Comments() {
                 <Modal
                     showModalState={showCommentModal}
                     setShowModalState={setShowCommentModal}
-                    title='متن دیدگاه'
+                    title='Comment Text'
                 >
                     <div className='space-y-4'>
                         <div className='min-h-max max-h-60 overflow-y-auto'>
                             <p>
-                                سلام
+                                Hello
                                 <br />
-                                ما برآنیم تا با پیشرو بودن در فرآیند تولید، نوع و کیفیت محصول، خدمات و توزیع، الگویی برای تولیدکنندگان ایرانی باشیم و به مرجع فرهنگ قهوه در ایران تبدیل شویم. می‌پنداریم که نظر مردم ایران و منطقه باید نسبت به کالای ایرانی بهبود یابد و در این راستا با اشتیاق می‌کوشیم.
+                                We aim to be a role model for Iranian manufacturers by pioneering the production process, product type and quality, services, and distribution, and to become the reference for coffee culture in Iran. We believe that the opinion of the people of Iran and the region should improve towards Iranian goods, and we strive passionately in this direction.
                             </p>
                         </div>
-                        <button className='w-full bg-green-500 hover:bg-green-600 text-white p-1 rounded transition-colors' onClick={() => setShowCommentModal(false)}> مشاهده کردم </button>
+                        <button className='w-full bg-green-500 hover:bg-green-600 text-white p-1 rounded transition-colors' onClick={() => setShowCommentModal(false)}> I see </button>
                     </div>
                 </Modal>
                 <Modal
                     showModalState={showCommentReplyModal}
                     setShowModalState={setShowCommentReplyModal}
-                    title='پاسخ به دیدگاه'
+                    title='Reply to Comment'
                 >
                     <div className='space-y-2'>
                         <div>
-                            <textarea className='w-full bg-blue-200/35 p-2 rounded-md focus:outline-none border placeholder:text-gray-500 dark:placeholder:text-gray-300/80 dark:text-white text-sm resize-none' rows={6} placeholder='متن پاسخ خود را وارد کنید...'></textarea>
+                            <textarea className='w-full bg-blue-200/35 p-2 rounded-md focus:outline-none border placeholder:text-gray-500 dark:placeholder:text-gray-300/80 dark:text-white text-sm resize-none' rows={6} placeholder='Enter your reply text...'></textarea>
                         </div>
                         <div className='flex gap-x-2 child:w-full child:text-white child:p-1 child:rounded child:transition-colors'>
-                            <button className='bg-green-500 hover:bg-green-600' onClick={showCommentReplyAlert}> ارسال پاسخ </button>
-                            <button className='bg-rose-500 hover:bg-rose-600' onClick={() => setShowCommentReplyModal(false)}> لغو </button>
+                            <button className='bg-green-500 hover:bg-green-600' onClick={showCommentReplyAlert}> Send Reply </button>
+                            <button className='bg-rose-500 hover:bg-rose-600' onClick={() => setShowCommentReplyModal(false)}> Cancel </button>
                         </div>
                     </div>
                 </Modal>
                 <Modal
                     showModalState={showEditCommentModal}
                     setShowModalState={setShowEditCommentModal}
-                    title='ویرایش دیدگاه'
+                    title='Edit Comment'
                 >
                     <form onSubmit={event => event.preventDefault()} className='grid items-center grid-cols-1 gap-4'>
                         <div className='space-y-1'>
-                            <label htmlFor='comment-new-title' className='font-morabba-medium'> متن دیدگاه جدید </label>
-                            <textarea id='comment-new-title' placeholder='متن دیدگاه جدید را وارد کنید...' className="w-full bg-blue-200/35 p-2 rounded-md focus:outline-none border placeholder:text-gray-500 dark:placeholder:text-gray-300/80 dark:text-white text-sm resize-none" rows={6}></textarea>
+                            <label htmlFor='comment-new-title' className='font-morabba-medium'> New Comment Text </label>
+                            <textarea id='comment-new-title' placeholder='Enter new comment text...' className="w-full bg-blue-200/35 p-2 rounded-md focus:outline-none border placeholder:text-gray-500 dark:placeholder:text-gray-300/80 dark:text-white text-sm resize-none" rows={6}></textarea>
                         </div>
                         <div className='flex items-center gap-2 child:w-full child:h-9 child:p-1 child:rounded child:text-white child:transition-colors'>
-                            <button className='bg-green-500 hover:bg-green-600' onClick={showEditCommentAlert}> تغییر اطلاعات </button>
-                            <button className='bg-rose-500 hover:bg-rose-600 mt-0' onClick={() => setShowEditCommentModal(false)}> لغو </button>
+                            <button className='bg-green-500 hover:bg-green-600' onClick={showEditCommentAlert}> Update Info </button>
+                            <button className='bg-rose-500 hover:bg-rose-600 mt-0' onClick={() => setShowEditCommentModal(false)}> Cancel </button>
                         </div>
                     </form>
                 </Modal>
             </section>
             <section className='comment-replies-container mt-8'>
                 <AdminPanelTableTitle
-                    title='پاسخ ها'
+                    title='Replies'
                     isList={true}
                 >
                     <DataTable
                         headerItemCount={5}
-                        headerItemTitle={['کاربر', "کالا", 'دیدگاه', 'پاسخ', 'حذف']}
+                        headerItemTitle={['User', "Product", 'Comment', 'Reply', 'Delete']}
                         sectionsTableWidth={['w-32 sm:w-48 md:w-72 ipad:60 lg:w-80 xl:w-96', 'w-10 sm:w-12 md:w-14 ipad:w-10 lg:w-12 xl:w-14', 'w-10 sm:w-12 md:w-14 ipad:w-10 lg:w-12 xl:w-14', 'w-7 sm:w-10 md:w-14 ipad:w-7 lg:w-12 xl:w-14', 'w-8 sm:w-10 md:w-14 ipad:w-10 lg:w-12 xl:w-14']}
                     >
                         <tr>
                             <td className='w-12 md:w-14 text-xs'>1</td>
                             <td className='line-clamp-2 w-32 sm:w-48 md:w-72 ipad:60 lg:w-80 xl:w-96'>
-                                هادی حیدری آذر
+                                Hadi Heidari Azar
                             </td>
                             <td className='w-10 sm:w-12 md:w-14 ipad:w-10 lg:w-12 xl:w-14'>
-                                <button className='bg-blue-500 hover:bg-blue-600 text-white text-xs font-dana-medium px-1 sm:px-2 py-1 sm:py-1.5 rounded transition-colors' onClick={showProductAlert}> مشاهده </button>
+                                <button className='bg-blue-500 hover:bg-blue-600 text-white text-xs font-dana-medium px-1 sm:px-2 py-1 sm:py-1.5 rounded transition-colors' onClick={showProductAlert}> View </button>
                             </td>
                             <td className='w-10 sm:w-12 md:w-14 ipad:w-10 lg:w-12 xl:w-14'>
-                                <button className='bg-blue-500 hover:bg-blue-600 text-white text-xs font-dana-medium px-1 sm:px-2 py-1 sm:py-1.5 rounded transition-colors' onClick={() => setShowCommentModal(true)}> مشاهده </button>
+                                <button className='bg-blue-500 hover:bg-blue-600 text-white text-xs font-dana-medium px-1 sm:px-2 py-1 sm:py-1.5 rounded transition-colors' onClick={() => setShowCommentModal(true)}> View </button>
                             </td>
                             <td className='w-10 sm:w-12 md:w-14 ipad:w-10 lg:w-12 xl:w-14'>
-                                <button className='bg-blue-500 hover:bg-blue-600 text-white text-xs font-dana-medium px-1 sm:px-2 py-1 sm:py-1.5 rounded transition-colors' onClick={() => setShowCommentReplyTextModal(true)}> مشاهده </button>
+                                <button className='bg-blue-500 hover:bg-blue-600 text-white text-xs font-dana-medium px-1 sm:px-2 py-1 sm:py-1.5 rounded transition-colors' onClick={() => setShowCommentReplyTextModal(true)}> View </button>
                             </td>
                             <td className='w-8 sm:w-10 md:w-14 ipad:w-10 lg:w-12 xl:w-14'>
-                                <button className='bg-rose-500 hover:bg-rose-600 text-white text-xs font-dana-medium px-1 sm:px-2 py-1 sm:py-1.5 rounded transition-colors' onClick={showRemoveCommentReplyAlert}> حذف </button>
+                                <button className='bg-rose-500 hover:bg-rose-600 text-white text-xs font-dana-medium px-1 sm:px-2 py-1 sm:py-1.5 rounded transition-colors' onClick={showRemoveCommentReplyAlert}> Delete </button>
                             </td>
                         </tr>
                     </DataTable>
@@ -257,17 +257,17 @@ export default function Comments() {
                 <Modal
                     showModalState={showCommentReplyTextModal}
                     setShowModalState={setShowCommentReplyTextModal}
-                    title='متن پاسخ'
+                    title='Reply Text'
                 >
                     <div className='space-y-4'>
                         <div className='min-h-max max-h-60 overflow-y-auto'>
                             <p>
-                                سلام
+                                Hello
                                 <br />
-                                ما برآنیم تا با پیشرو بودن در فرآیند تولید، نوع و کیفیت محصول، خدمات و توزیع، الگویی برای تولیدکنندگان ایرانی باشیم و به مرجع فرهنگ قهوه در ایران تبدیل شویم. می‌پنداریم که نظر مردم ایران و منطقه باید نسبت به کالای ایرانی بهبود یابد و در این راستا با اشتیاق می‌کوشیم.
+                                We aim to be a role model for Iranian manufacturers by pioneering the production process, product type and quality, services, and distribution, and to become the reference for coffee culture in Iran. We believe that the opinion of the people of Iran and the region should improve towards Iranian goods, and we strive passionately in this direction.
                             </p>
                         </div>
-                        <button className='w-full bg-green-500 hover:bg-green-600 text-white p-1 rounded transition-colors' onClick={() => setShowCommentReplyTextModal(false)}> مشاهده کردم </button>
+                        <button className='w-full bg-green-500 hover:bg-green-600 text-white p-1 rounded transition-colors' onClick={() => setShowCommentReplyTextModal(false)}> I see </button>
                     </div>
                 </Modal>
             </section>

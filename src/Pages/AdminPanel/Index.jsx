@@ -13,7 +13,7 @@ export default function Index() {
                 <div className='content flex gap-x-7 dark:text-white'>
                     <div className='hidden ipad:block ipad:w-1/5 max-h-screen p-6 pl-0'>
                         <div className='min-h-full px-1 overflow-y-auto'>
-                            <h1 className='text-4xl font-morabba-medium ms-1 mb-8'> پنل مدیریت </h1>
+                            <h1 className='text-4xl font-morabba-medium ms-1 mb-8'> Admin Panel </h1>
                             <AdminPanelSidebar />
                         </div>
                     </div>

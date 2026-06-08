@@ -7,7 +7,7 @@ export default function Breadcrumb({ firstTitle, lastTitle, firsTitletLink, isBg
                 <ol className={`inline-flex items-center overflow-x-auto overflow-y-hidden w-full py-2 space-x-1 child:tracking-tighter text-center ${centered ? "justify-center" : ""}`}>
                     <li className="inline-flex items-center">
                         <a href="/" className="inline-flex items-center text-sm/[18px] w-max font-medium text-gray-700 hover:text-orange-400 dark:text-gray-300 dark:hover:text-orange-300 transition-colors me-1">
-                            صفحه اصلی
+                            Home Page
                         </a>
                     </li>
                     <li>

@@ -58,59 +58,57 @@ export default function Footer() {
                             </svg>
                         </div>
                         <p className="xl:max-w-[550px] text-base md:text-lg/10">
-                            ما برآنیم تا با پیشرو بودن در فرآیند تولید، نوع و کیفیت محصول، خدمات و توزیع، الگویی برای
-                            تولیدکنندگان ایرانی باشیم و به مرجع فرهنگ قهوه در ایران تبدیل شویم. می‌پنداریم که نظر مردم ایران
-                            و منطقه باید نسبت به کالای ایرانی بهبود یابد و در این راستا با اشتیاق می‌کوشیم.
+                            We aim to be a role model for Iranian producers by leading in production process, product type and quality, services, and distribution, and to become a reference for coffee culture in Iran. We believe that the opinion of the people of Iran and the region about Iranian goods should improve, and we strive passionately in this direction.
                         </p>
                     </div>
                     <div className="mt-10">
-                        <h4 className="block font-dana-bold text-xl text-white mb-5"> دسترسی سریع </h4>
+                        <h4 className="block font-dana-bold text-xl text-white mb-5"> Quick Access </h4>
                         <div
                             className="grid grid-cols-2 gap-y-4 gap-x-5 sm:gap-x-27 text-sm sm:text-base child:transition-all child-hover:text-orange-300">
                             <a href="#" className="flex items-center gap-x-2 group">
                                 <span
                                     className="inline-block w-2 h-1 bg-white rounded-full group-hover:bg-orange-300 transition-all"></span>
-                                حریم خصوصی
+                                Privacy
                             </a>
                             <a href="#" className="flex items-center gap-x-2 group">
                                 <span
                                     className="inline-block w-2 h-1 bg-white rounded-full group-hover:bg-orange-300 transition-all"></span>
-                                عودت کالا
+                                Returns
                             </a>
                             <a href="#" className="flex items-center gap-x-2 group">
                                 <span
                                     className="inline-block w-2 h-1 bg-white rounded-full group-hover:bg-orange-300 transition-all"></span>
-                                شرایط استفاده
+                                Terms of Use
                             </a>
                             <a href="#" className="flex items-center gap-x-2 group">
                                 <span
                                     className="inline-block w-2 h-1 bg-white rounded-full group-hover:bg-orange-300 transition-all"></span>
-                                ثبت سفارش
+                                Place Order
                             </a>
                             <a href="#" className="flex items-center gap-x-2 group">
                                 <span
                                     className="inline-block w-2 h-1 bg-white rounded-full group-hover:bg-orange-300 transition-all"></span>
-                                پرسش های متداول
+                                FAQ
                             </a>
                             <a href="#" className="flex items-center gap-x-2 group">
                                 <span
                                     className="inline-block w-2 h-1 bg-white rounded-full group-hover:bg-orange-300 transition-all"></span>
-                                فرصت های شغلی
+                                Careers
                             </a>
                             <a href="#" className="flex items-center gap-x-2 group">
                                 <span
                                     className="inline-block w-2 h-1 bg-white rounded-full group-hover:bg-orange-300 transition-all"></span>
-                                ضمانت نامه ها
+                                Warranties
                             </a>
                             <a href="/contact-us" className="flex items-center gap-x-2 group">
                                 <span
                                     className="inline-block w-2 h-1 bg-white rounded-full group-hover:bg-orange-300 transition-all"></span>
-                                ارتباط با ما
+                                Contact Us
                             </a>
                         </div>
                     </div>
                     <div className="mt-10">
-                        <h4 className="block font-dana-bold text-xl text-white mb-6"> در تماس باشیم</h4>
+                            <h4 className="block font-dana-bold text-xl text-white mb-6"> Let's Stay in Touch</h4>
                         <div>
                             <div className="text-base mb-6 md:mb-10"><span
                                 className="flex items-center gap-x-2 md:gap-x-3 mb-4 md:mb-5">
@@ -121,7 +119,7 @@ export default function Footer() {
                                         d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z">
                                     </path>
                                 </svg>
-                                بلوار میرداماد، خیابان البرز، کوچه قبادیان شرقی، پلاک ۳۳
+                                Mirdamad Blvd, Alborz St, Sharghi Ghobadian Alley, No. 33
                             </span>
                                 <div className="flex flex-wrap gap-y-4 gap-x-5 font-dana-medium"><a
                                     href="mailto:info@Coffee.com"
@@ -176,8 +174,7 @@ export default function Footer() {
                                 <div className="w-2.5 h-2.5 rounded-full bg-gradient-to-t from-orange-300 to-orange-200"></div>
                             </div>
                         </div>
-                        <p>تمام حقوق این رابط کاربری متعلق به سبزلرن میباشد و دانشجوی این دوره اجازه استفاده آن را در مصارف
-                            شخصی و تجاری ندارد.</p>
+                        <p>All rights to this UI belong to SabzLearn, and the student of this course is not permitted to use it for personal or commercial purposes.</p>
                     </div>
                     <span className="ltr-text mr-auto">.Copyright © 2023 Golden Coffee. All rights reserved</span>
                 </div>

@@ -7,9 +7,9 @@ export default function Services() {
             <div className="container">
                 <div className="grid sm:gap-x-2 gap-y-10 grid-cols-2 lg:grid-cols-4">
                     <ServiceBox
-                        title="پشتیبانی شبانه روزی"
-                        desc="7 روز هفته ،
-                                24 ساعته"
+                        title="24/7 Support"
+                        desc="7 days a week,
+                                24 hours"
                     >
                         <svg className="inline-block dark:hidden w-16 sm:w-[70px] h-16 sm:h-[70px]" viewBox="0 0 66 73" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clipPath="url(#clip0_862_573)">
@@ -71,9 +71,9 @@ export default function Services() {
                         </svg>
                     </ServiceBox>
                     <ServiceBox
-                        title="امکان تحویل اکسپرس"
-                        desc="ارسال بسته
-                                با سرعت باد"
+                        title="Express Delivery"
+                        desc="Lightning-fast
+                                delivery"
                     >
                         <svg className="inline-block dark:hidden w-16 sm:w-[70px] h-16 sm:h-[70px]" viewBox="0 0 109 73" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clipPath="url(#clip0_862_604)">
@@ -179,9 +179,9 @@ export default function Services() {
                         </svg>
                     </ServiceBox>
                     <ServiceBox
-                        title="رست تخصصی"
-                        desc="تازه برشته
-                                شده و با کیفیت"
+                        title="Specialty Roast"
+                        desc="Freshly roasted
+                                and high quality"
                     >
                         <svg className="inline-block dark:hidden w-16 sm:w-[70px] h-16 sm:h-[70px]" viewBox="0 0 52 73" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M29.05 8.5V1.5H21.55V8.5L17.05 18L16.55 30H24.55V18L29.05 8.5Z" fill="#0D9488"></path>
@@ -209,9 +209,9 @@ export default function Services() {
                         </svg>
                     </ServiceBox>
                     <ServiceBox
-                        title="اکسسوری قهوه"
-                        desc="وسایل و ادوات
-                                دم آوری"
+                        title="Coffee Accessories"
+                        desc="Brewing tools
+                                and equipment"
                     >
                         <svg className="inline-block dark:hidden w-16 sm:w-[70px] h-16 sm:h-[70px]" viewBox="0 0 76 73" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path

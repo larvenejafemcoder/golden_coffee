@@ -11,16 +11,16 @@ export default function Products() {
 
   const showAddNewProductAlert = () => {
     Swal.fire({
-      text: 'کالای جدید با موفقیت ساخته شد',
+      text: 'New product created successfully',
       icon: 'success',
-      confirmButtonText: 'متوجه شدم!'
+      confirmButtonText: 'Got it!'
     })
   }
   const showEditProductAlert = () => {
     Swal.fire({
-      text: 'کالای مورد نظر با موفقیت ویرایش شد',
+      text: 'Product updated successfully',
       icon: 'success',
-      confirmButtonText: 'متوجه شدم!'
+      confirmButtonText: 'Got it!'
     })
 
     setShowEditProductModal(false)
@@ -28,17 +28,17 @@ export default function Products() {
 
   const showRemoveProductAlert = () => {
     Swal.fire({
-      text: 'آیا از حذف کالای مورد نظر مطمئن هستی؟',
+      text: 'Are you sure you want to delete this product?',
       icon: 'question',
-      confirmButtonText: 'بله',
+      confirmButtonText: 'Yes',
       showCancelButton: true,
-      cancelButtonText: 'خیر'
+      cancelButtonText: 'No'
     }).then(res => {
       if (res.isConfirmed) {
         Swal.fire({
-          text: 'کالای مورد نظر با موفقیت حذف شد',
+          text: 'Product deleted successfully',
           icon: 'success',
-          confirmButtonText: 'متوجه شدم!',
+          confirmButtonText: 'Got it!',
         })
       }
     })
@@ -46,72 +46,72 @@ export default function Products() {
 
   return (
     <>
-      <TitlePage title='مدیریت کالاها' />
+      <TitlePage title='Product Management' />
       <section className='add-new-product'>
         <AdminPanelTableTitle
-          title="کالا جدید"
+          title="New Product"
         >
           <form onSubmit={event => event.preventDefault()} className='grid items-center grid-cols-1 sm:grid-cols-2 gap-6 child:space-y-2'>
             <div>
-              <label htmlFor='product-title' className='font-morabba-medium'> عنوان </label>
-              <input type='text' id='product-title' placeholder='عنوان را وارد کنید...' className="w-full bg-blue-200/35 p-2 rounded-md focus:outline-none border placeholder:text-gray-500 dark:placeholder:text-gray-300/80 dark:text-white text-sm" />
+              <label htmlFor='product-title' className='font-morabba-medium'> Title </label>
+              <input type='text' id='product-title' placeholder='Enter title...' className="w-full bg-blue-200/35 p-2 rounded-md focus:outline-none border placeholder:text-gray-500 dark:placeholder:text-gray-300/80 dark:text-white text-sm" />
             </div>
             <div>
-              <label htmlFor='product-shortname' className='font-morabba-medium'> اسم کوتاه </label>
-              <input type='text' id='product-shortname' placeholder="اسم کوتاه را وارد کنید (مثال: dress-gray)" className='w-full bg-blue-200/35 p-2 rounded-md focus:outline-none border placeholder:text-gray-500 dark:placeholder:text-gray-300/80 dark:text-white text-sm' />
+              <label htmlFor='product-shortname' className='font-morabba-medium'> Short Name </label>
+              <input type='text' id='product-shortname' placeholder="Enter short name (e.g., dress-gray)" className='w-full bg-blue-200/35 p-2 rounded-md focus:outline-none border placeholder:text-gray-500 dark:placeholder:text-gray-300/80 dark:text-white text-sm' />
             </div>
             <div>
-              <label htmlFor='product-price' className='font-morabba-medium'> قیمت(تومان) </label>
-              <input type='number' id='product-price' placeholder='قیمت(تومان) را وارد کنید...' className="w-full bg-blue-200/35 p-2 rounded-md focus:outline-none border placeholder:text-gray-500 dark:placeholder:text-gray-300/80 dark:text-white text-sm" />
+              <label htmlFor='product-price' className='font-morabba-medium'> Price (Toman) </label>
+              <input type='number' id='product-price' placeholder='Enter price (Toman)...' className="w-full bg-blue-200/35 p-2 rounded-md focus:outline-none border placeholder:text-gray-500 dark:placeholder:text-gray-300/80 dark:text-white text-sm" />
             </div>
             <div>
-              <label htmlFor='product-off' className='font-morabba-medium'> درصد تخفیف </label>
-              <input type='number' id='product-off' placeholder='درصد تخفیف را وارد کنید...' className="w-full bg-blue-200/35 p-2 rounded-md focus:outline-none border placeholder:text-gray-500 dark:placeholder:text-gray-300/80 dark:text-white text-sm" />
+              <label htmlFor='product-off' className='font-morabba-medium'> Discount Percentage </label>
+              <input type='number' id='product-off' placeholder='Enter discount percentage...' className="w-full bg-blue-200/35 p-2 rounded-md focus:outline-none border placeholder:text-gray-500 dark:placeholder:text-gray-300/80 dark:text-white text-sm" />
             </div>
             <div>
-              <label className='font-morabba-medium'> دسته بندی </label>
+              <label className='font-morabba-medium'> Category </label>
               <select className='w-full bg-blue-200/35 dark:bg-slate-500/75 p-2 rounded-md focus:outline-none border dark:text-white text-sm'>
-                <option value='category-1'> قهوه ترک </option>
-                <option value='category-2'> لوازم جانبی و تجهیزات </option>
-                <option value='category-3'> شهوه دمی و اسپرسو </option>
-                <option value='category-4'> اسپرسو ساز </option>
-                <option value='category-5'> پک تستر قهوه </option>
+                <option value='category-1'> Turkish Coffee </option>
+                <option value='category-2'> Accessories & Equipment </option>
+                <option value='category-3'> Brewed Coffee & Espresso </option>
+                <option value='category-4'> Espresso Machine </option>
+                <option value='category-5'> Coffee Tester Pack </option>
               </select>
             </div>
             <div>
-              <label htmlFor='product-images' className='font-morabba-medium'> تصاویر </label>
+              <label htmlFor='product-images' className='font-morabba-medium'> Images </label>
               <input type='file' id='product-images' accept='image/*' className='w-full bg-blue-200/35 p-2 rounded-md focus:outline-none dark:text-white border text-sm' multiple />
             </div>
             <div>
-              <label htmlFor='product-description' className='font-morabba-medium'> توضیحات </label>
-              <textarea type='number' id='product-description' placeholder='توضیحات را وارد کنید...' className="w-full bg-blue-200/35 p-2 rounded-md focus:outline-none border placeholder:text-gray-500 dark:placeholder:text-gray-300/80 dark:text-white text-sm resize-none" rows={6}></textarea>
+              <label htmlFor='product-description' className='font-morabba-medium'> Description </label>
+              <textarea type='number' id='product-description' placeholder='Enter description...' className="w-full bg-blue-200/35 p-2 rounded-md focus:outline-none border placeholder:text-gray-500 dark:placeholder:text-gray-300/80 dark:text-white text-sm resize-none" rows={6}></textarea>
             </div>
             <div className='flex sm:block'>
               <br className='invisible' />
-              <button className='w-max py-1 px-2 h-8 rounded bg-green-500 text-white hover:bg-green-600 transition-colors' onClick={showAddNewProductAlert}> افزودن </button>
+              <button className='w-max py-1 px-2 h-8 rounded bg-green-500 text-white hover:bg-green-600 transition-colors' onClick={showAddNewProductAlert}> Add </button>
             </div>
           </form>
         </AdminPanelTableTitle>
       </section>
       <section className='products-container mt-8'>
         <AdminPanelTableTitle
-          title='کالاها'
+          title='Products'
           isList={true}
         >
           <DataTable
             headerItemCount={6}
-            headerItemTitle={['عنوان', 'دسته بندی', 'قیمت', 'تخفیف', 'ویرایش', 'حذف']}
+            headerItemTitle={['Title', 'Category', 'Price', 'Discount', 'Edit', 'Delete']}
             sectionsTableWidth={['w-44 sm:w-64 md:w-72 xl:w-96', 'w-24 sm:w-28 lg:w-32', 'w-16 sm:w-20', 'w-8 sm:w-9', 'w-10', 'w-6 sm:w-7']}
           >
             <tr>
               <td className='w-12 text-xs'>1</td>
               <td className='line-clamp-2 w-44 sm:w-64 md:w-72 xl:w-96'>
                 <a href='/product/coffee' className='hover:text-orange-600 dark:hover:text-orange-300 transition-colors'>
-                  قهوه اسپرسو بن مانو مدل پریسکا 250 گرمی
+                  Ben Mano Espresso Coffee Prisca Model 250g
                 </a>
               </td>
               <td className='line-clamp-2 w-24 sm:w-28'>
-                لوازم جانبی و تجهیزات
+                Accessories & Equipment
               </td>
               <td className='line-clamp-2 w-16 sm:w-20'>
                 2,000,000
@@ -120,44 +120,44 @@ export default function Products() {
                 40%
               </td>
               <td className='w-9'>
-                <button className='bg-green-500 hover:bg-green-600 text-white text-xs font-dana-medium p-1 rounded transition-colors' onClick={() => setShowEditProductModal(true)}> ویرایش </button>
+                <button className='bg-green-500 hover:bg-green-600 text-white text-xs font-dana-medium p-1 rounded transition-colors' onClick={() => setShowEditProductModal(true)}> Edit </button>
               </td>
               <td className='w-8'>
-                <button className='bg-rose-500 hover:bg-rose-600 text-white text-xs font-dana-medium p-1 rounded transition-colors' onClick={showRemoveProductAlert}> حذف </button>
+                <button className='bg-rose-500 hover:bg-rose-600 text-white text-xs font-dana-medium p-1 rounded transition-colors' onClick={showRemoveProductAlert}> Delete </button>
               </td>
             </tr>
             <tr>
               <td className='w-12 text-xs'>2</td>
               <td className='line-clamp-2 w-44 sm:w-64 md:w-72 xl:w-96'>
                 <a href='/product/coffee' className='hover:text-orange-600 dark:hover:text-orange-300 transition-colors'>
-                  قهوه اسپرسو بن مانو مدل پریسکا 250 گرمی
+                  Ben Mano Espresso Coffee Prisca Model 250g
                 </a>
               </td>
               <td className='line-clamp-2 w-24 sm:w-28'>
-                قهوه ترک
+                Turkish Coffee
               </td>
               <td className='line-clamp-2 w-16 sm:w-20'>
                 450,000
               </td>
               <td className='line-clamp-2 w-7 sm:w-8'>
-                ندارد
+                None
               </td>
               <td className='w-9'>
-                <button className='bg-green-500 hover:bg-green-600 text-white text-xs font-dana-medium p-1 rounded transition-colors' onClick={() => setShowEditProductModal(true)}> ویرایش </button>
+                <button className='bg-green-500 hover:bg-green-600 text-white text-xs font-dana-medium p-1 rounded transition-colors' onClick={() => setShowEditProductModal(true)}> Edit </button>
               </td>
               <td className='w-8'>
-                <button className='bg-rose-500 hover:bg-rose-600 text-white text-xs font-dana-medium p-1 rounded transition-colors' onClick={showRemoveProductAlert}> حذف </button>
+                <button className='bg-rose-500 hover:bg-rose-600 text-white text-xs font-dana-medium p-1 rounded transition-colors' onClick={showRemoveProductAlert}> Delete </button>
               </td>
             </tr>
             <tr>
               <td className='w-12 text-xs'>3</td>
               <td className='line-clamp-2 w-44 sm:w-64 md:w-72 xl:w-96'>
                 <a href='/product/coffee' className='hover:text-orange-600 dark:hover:text-orange-300 transition-colors'>
-                  قهوه اسپرسو بن مانو مدل پریسکا 250 گرمی
+                  Ben Mano Espresso Coffee Prisca Model 250g
                 </a>
               </td>
               <td className='line-clamp-2 w-24 sm:w-28'>
-                پک تستر قهوه
+                Coffee Tester Pack
               </td>
               <td className='line-clamp-2 w-16 sm:w-20'>
                 3,056,500
@@ -166,10 +166,10 @@ export default function Products() {
                 10%
               </td>
               <td className='w-9'>
-                <button className='bg-green-500 hover:bg-green-600 text-white text-xs font-dana-medium p-1 rounded transition-colors' onClick={() => setShowEditProductModal(true)}> ویرایش </button>
+                <button className='bg-green-500 hover:bg-green-600 text-white text-xs font-dana-medium p-1 rounded transition-colors' onClick={() => setShowEditProductModal(true)}> Edit </button>
               </td>
               <td className='w-8'>
-                <button className='bg-rose-500 hover:bg-rose-600 text-white text-xs font-dana-medium p-1 rounded transition-colors' onClick={showRemoveProductAlert}> حذف </button>
+                <button className='bg-rose-500 hover:bg-rose-600 text-white text-xs font-dana-medium p-1 rounded transition-colors' onClick={showRemoveProductAlert}> Delete </button>
               </td>
             </tr>
           </DataTable>
@@ -177,56 +177,56 @@ export default function Products() {
           <Modal
             showModalState={showEditProductModal}
             setShowModalState={setShowEditProductModal}
-            title='ویرایش کالا'
+            title='Edit Product'
             moldaWidth='md:w-[700px]'
           >
             <form onSubmit={event => event.preventDefault()}>
               <div className='max-h-96 h-max overflow-y-auto grid items-center grid-cols-1 xs:grid-cols-2 gap-4 mb-3'>
                 <div className='space-y-1'>
-                  <label htmlFor='product-new-title' className='font-morabba-medium'> عنوان جدید </label>
-                  <input type='text' id='product-new-title' placeholder='عنوان جدید را وارد کنید...' className="w-full bg-blue-200/35 p-2 rounded-md focus:outline-none border placeholder:text-gray-500 dark:placeholder:text-gray-300/80 dark:text-white text-sm" />
+                  <label htmlFor='product-new-title' className='font-morabba-medium'> New Title </label>
+                  <input type='text' id='product-new-title' placeholder='Enter new title...' className="w-full bg-blue-200/35 p-2 rounded-md focus:outline-none border placeholder:text-gray-500 dark:placeholder:text-gray-300/80 dark:text-white text-sm" />
                 </div>
                 <div className='space-y-1'>
-                  <label htmlFor='product-new-shortname' className='font-morabba-medium'> اسم کوتاه جدید </label>
-                  <input type='text' id='product-new-shortname' placeholder="اسم کوتاه جدید را وارد کنید (مثال: dress-gray)" className='w-full bg-blue-200/35 p-2 rounded-md focus:outline-none border placeholder:text-gray-500 dark:placeholder:text-gray-300/80 dark:text-white text-sm' />
+                  <label htmlFor='product-new-shortname' className='font-morabba-medium'> New Short Name </label>
+                  <input type='text' id='product-new-shortname' placeholder="Enter new short name (e.g., dress-gray)" className='w-full bg-blue-200/35 p-2 rounded-md focus:outline-none border placeholder:text-gray-500 dark:placeholder:text-gray-300/80 dark:text-white text-sm' />
                 </div>
                 <div className='space-y-1'>
-                  <label htmlFor='product-new-price' className='font-morabba-medium'> قیمت(تومان) جدید </label>
-                  <input type='number' id='product-new-price' placeholder='قیمت(تومان) جدید را وارد کنید...' className="w-full bg-blue-200/35 p-2 rounded-md focus:outline-none border placeholder:text-gray-500 dark:placeholder:text-gray-300/80 dark:text-white text-sm" />
+                  <label htmlFor='product-new-price' className='font-morabba-medium'> New Price (Toman) </label>
+                  <input type='number' id='product-new-price' placeholder='Enter new price (Toman)...' className="w-full bg-blue-200/35 p-2 rounded-md focus:outline-none border placeholder:text-gray-500 dark:placeholder:text-gray-300/80 dark:text-white text-sm" />
                 </div>
                 <div className='space-y-1'>
-                  <label htmlFor='product-new-off' className='font-morabba-medium'> درصد تخفیف جدید </label>
-                  <input type='number' id='product-new-off' placeholder='درصد تخفیف جدید را وارد کنید...' className="w-full bg-blue-200/35 p-2 rounded-md focus:outline-none border placeholder:text-gray-500 dark:placeholder:text-gray-300/80 dark:text-white text-sm" />
+                  <label htmlFor='product-new-off' className='font-morabba-medium'> New Discount Percentage </label>
+                  <input type='number' id='product-new-off' placeholder='Enter new discount percentage...' className="w-full bg-blue-200/35 p-2 rounded-md focus:outline-none border placeholder:text-gray-500 dark:placeholder:text-gray-300/80 dark:text-white text-sm" />
                 </div>
                 <div className='space-y-1'>
-                  <label className='font-morabba-medium'> دسته بندی جدید </label>
+                  <label className='font-morabba-medium'> New Category </label>
                   <select className='w-full bg-blue-200/35 dark:bg-slate-500/75 p-2 rounded-md focus:outline-none border dark:text-white text-sm'>
-                    <option value='category-1'> قهوه ترک </option>
-                    <option value='category-2'> لوازم جانبی و تجهیزات </option>
-                    <option value='category-3'> شهوه دمی و اسپرسو </option>
-                    <option value='category-4'> اسپرسو ساز </option>
-                    <option value='category-5'> پک تستر قهوه </option>
+                    <option value='category-1'> Turkish Coffee </option>
+                    <option value='category-2'> Accessories & Equipment </option>
+                    <option value='category-3'> Brewed Coffee & Espresso </option>
+                    <option value='category-4'> Espresso Machine </option>
+                    <option value='category-5'> Coffee Tester Pack </option>
                   </select>
                 </div>
                 <div className='space-y-1'>
-                  <label htmlFor='product-new-images' className='font-morabba-medium'> تصاویر جدید </label>
+                  <label htmlFor='product-new-images' className='font-morabba-medium'> New Images </label>
                   <input type='file' id='product-new-images' accept='image/*' className='w-full bg-blue-200/35 p-2 rounded-md focus:outline-none dark:text-white border text-sm' multiple />
                 </div>
                 <div className='space-y-1 -mb-2'>
-                  <label htmlFor='product-new-description' className='font-morabba-medium'> توضیحات جدید </label>
-                  <textarea type='number' id='product-new-description' placeholder='توضیحات جدید را وارد کنید...' className="w-full bg-blue-200/35 p-2 rounded-md focus:outline-none border placeholder:text-gray-500 dark:placeholder:text-gray-300/80 dark:text-white text-sm resize-none" rows={6}></textarea>
+                  <label htmlFor='product-new-description' className='font-morabba-medium'> New Description </label>
+                  <textarea type='number' id='product-new-description' placeholder='Enter new description...' className="w-full bg-blue-200/35 p-2 rounded-md focus:outline-none border placeholder:text-gray-500 dark:placeholder:text-gray-300/80 dark:text-white text-sm resize-none" rows={6}></textarea>
                 </div>
                 <div className='space-y-1'>
-                  <label className='font-morabba-medium'> وضعیت جدید </label>
+                  <label className='font-morabba-medium'> New Status </label>
                   <select className='w-full bg-blue-200/35 dark:bg-slate-500/75 p-2 rounded-md focus:outline-none border dark:text-white text-sm'>
-                    <option value='status-1'> موجود در انبار </option>
-                    <option value='status-2'> ناموجود </option>
+                    <option value='status-1'> In Stock </option>
+                    <option value='status-2'> Out of Stock </option>
                   </select>
                 </div>
               </div>
               <div className='flex items-center gap-2 child:w-full child:h-9 child:p-1 child:rounded child:text-white child:transition-colors'>
-                <button className='bg-green-500 hover:bg-green-600' onClick={showEditProductAlert}> تغییر اطلاعات </button>
-                <button className='bg-rose-500 hover:bg-rose-600 mt-0' onClick={() => setShowEditProductModal(false)}> لغو </button>
+                <button className='bg-green-500 hover:bg-green-600' onClick={showEditProductAlert}> Update Info </button>
+                <button className='bg-rose-500 hover:bg-rose-600 mt-0' onClick={() => setShowEditProductModal(false)}> Cancel </button>
               </div>
             </form>
           </Modal>

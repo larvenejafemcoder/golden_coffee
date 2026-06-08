@@ -8,27 +8,27 @@ export default function Categories() {
                 <div
                     className="grid grid-cols-2 xs:grid-cols-3 md:grid-cols-4 xl:grid-cols-5 items-center justify-between text-center gap-4 md:gap-5">
                     <CategoryBox
-                        title="شهوه دمی و اسپرسو"
+                        title="Brewed & Espresso Coffee"
                         imageSrc="category1.png"
                         link="/category/coffee"
                     />
                     <CategoryBox
-                        title="لوازم جانبی و تجهیزات"
+                        title="Accessories & Equipment"
                         imageSrc="category2.png"
                         link="/category/coffee"
                     />
                     <CategoryBox
-                        title="اسپرسو ساز"
+                        title="Espresso Machine"
                         imageSrc="category3.png"
                         link="/category/coffee"
                     />
                     <CategoryBox
-                        title="پک تستر قهوه"
+                        title="Coffee Taster Pack"
                         imageSrc="category4.png"
                         link="/category/coffee"
                     />
                     <CategoryBox
-                        title="قهوه ترک"
+                        title="Turkish Coffee"
                         imageSrc="category5.png"
                         link="/category/coffee"
                     />

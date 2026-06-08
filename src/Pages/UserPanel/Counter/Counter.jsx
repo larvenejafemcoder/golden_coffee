@@ -5,15 +5,15 @@ import CounterBox from '../../../Components/CounterBox/CounterBox'
 export default function Counter() {
     return (
         <>
-            <TitlePage title="پیشخوان - پنل کاربری" />
+            <TitlePage title="Dashboard - User Panel" />
             <section className='counter'>
                 <div className="container-2xl">
                     <div className='boxes-container grid grid-cols-1 sm:grid-cols-2 gap-4'>
                         <CounterBox
                             boxColor="bg-sky-500"
-                            title="سفارش های من"
+                            title="My Orders"
                             count={1500}
-                            subTitle="سفارش"
+                            subTitle="Order"
                             iconBg="bg-sky-300/50"
                         >
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-7 h-7 xs:w-9 xs:h-9 text-white">
@@ -22,9 +22,9 @@ export default function Counter() {
                         </CounterBox>
                         <CounterBox
                             boxColor="bg-emerald-500"
-                            title="مجموع تیکت ها"
+                            title="Total Tickets"
                             count={1500}
-                            subTitle="تیکت"
+                            subTitle="Ticket"
                             iconBg="bg-emerald-300/50"
                         >
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-7 h-7 xs:w-9 xs:h-9 text-white">
@@ -34,16 +34,16 @@ export default function Counter() {
                         </CounterBox>
                     </div>
                     <p className='mt-6 xs:mt-10 sm:mt-12 md:mt-16 text-sm/5 xs:text-base'>
-                        از طریق پیشخوان حساب کاربری‌تان، می‌توانید محصول هایی که سفارش دادید را مشاهده کنید و اگر مشکلی یا سوالی هم داشتید تیکت ارسال کنید و آنها را مدیریت کنید و جزییات حساب کاربری و کلمه عبور خود را ویرایش کنید.
+                        From your account dashboard, you can view the products you've ordered, submit and manage tickets if you have any issues or questions, and edit your account details and password.
                     </p>
                     <div className='mt-8 xs:mt-10'>
                         <p className='text-sm/4'>
-                            سلام
-                            <span className='font-dana-bold tracking-tight text-base'> هادی حیدری آذر </span>
+                            Hello
+                            <span className='font-dana-bold tracking-tight text-base'> Hadi Heidari Azar </span>
                             (
-                            <span className='font-dana-bold tracking-tight text-base'> هادی حیدری آذر </span>
-                            نیستید؟
-                            <span className='cursor-pointer hover:font-bold transition-all'> خارج شوید </span>
+                            <span className='font-dana-bold tracking-tight text-base'> Hadi Heidari Azar </span>
+                            aren't you?
+                            <span className='cursor-pointer hover:font-bold transition-all'> Logout </span>
                             )
                         </p>
                     </div>

@@ -10,26 +10,26 @@ export default function Login() {
 
     const showAlert = () => {
         Swal.fire({
-            text: 'شما با موفقیت وارد حساب کاربری خود شدید',
+            text: 'You have successfully logged into your account',
             icon: 'success',
-            confirmButtonText: 'متوجه شدم!'
+            confirmButtonText: 'Got it!'
         })
     }
 
     return (
         <>
-            <TitlePage title="ورود به حساب" />
+            <TitlePage title="Log In" />
             <Header />
             <div className='h-max-content flex justify-center items-center'>
                 <div className='bg-white dark:bg-zinc-700 h-max-content w-[450px] sm:w-[500px] mx-2 mt-28 md:mt-40 mb-16 p-5 xs:p-10 rounded-lg shadow'>
-                    <h1 className='text-black dark:text-white text-xl xs:text-2xl text-center mb-5'> ورود به حساب </h1>
+                    <h1 className='text-black dark:text-white text-xl xs:text-2xl text-center mb-5'> Log In </h1>
                     <form className='space-y-10' onSubmit={event => event.preventDefault()}>
                         <div className='space-y-2'>
-                            <label htmlFor="user-email" className='text-black dark:text-white text-sm xs:text-base'> ایمیل </label>
+                            <label htmlFor="user-email" className='text-black dark:text-white text-sm xs:text-base'> Email </label>
                             <input type="email" placeholder='name@company.com' id='user-email' className='w-full bg-blue-200/35 p-2 rounded-md focus:outline-none placeholder:text-gray-400 dark:placeholder:text-gray-300/60 dark:text-white text-sm xs:text-base' />
                         </div>
                         <div className='space-y-2 relative'>
-                            <label htmlFor="user-password" className='text-black dark:text-white text-sm xs:text-base'> رمز عبور </label>
+                            <label htmlFor="user-password" className='text-black dark:text-white text-sm xs:text-base'> Password </label>
                             <input type={showPassword ? "text" : "password"} placeholder='••••••••' id='user-password' className='w-full bg-blue-200/35 ps-2 py-2 pe-10 rounded-md focus:outline-none placeholder:text-gray-400 dark:placeholder:text-gray-300/60 dark:text-white text-sm xs:text-base' />
 
                             <div className="inline">
@@ -54,10 +54,10 @@ export default function Login() {
                             </div>
                         </div>
                         <div className='space-y-3'>
-                            <button className='bg-orange-400 w-full p-1.5 xs:p-2 text-white text-lg xs:text-xl text-center rounded-md hover:bg-green-500 group transition-colors' onClick={showAlert}>ورود</button>
+                            <button className='bg-orange-400 w-full p-1.5 xs:p-2 text-white text-lg xs:text-xl text-center rounded-md hover:bg-green-500 group transition-colors' onClick={showAlert}>Log In</button>
                             <div className='text-center child:tracking-tightest'>
-                                <span className='text-base text-zinc-800 dark:text-white'>حسابی ندارید؟</span>
-                                <a href="/register" className='text-orange-400'> ثبت نام </a>
+                                <span className='text-base text-zinc-800 dark:text-white'>Don't have an account?</span>
+                                <a href="/register" className='text-orange-400'> Register </a>
                             </div>
                         </div>
                     </form>

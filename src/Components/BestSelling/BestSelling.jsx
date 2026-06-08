@@ -9,8 +9,8 @@ export default function BestSelling() {
         <section className="best-selling mb-9 md:mb-20">
             <div className="container">
                 <SectionHeader
-                    title="پرفروش ترین محصولات"
-                    subTitle="فرآوری شده از دانه قهوه">
+                    title="Best Selling Products"
+                    subTitle="Processed from coffee beans">
                     <div className="flex gap-x-2 sm:gap-x-3 md:gap-x-4">
                         <div
                             className="flex justify-center items-center w-8 h-8 md:w-10 md:h-10 rounded-full shadow-normal bg-white text-zinc-700 dark:bg-zinc-700 dark:text-white hover:bg-gray-300 hover:dark:bg-white hover:dark:text-zinc-700 transition-all prev-button-slide">
@@ -70,17 +70,17 @@ export default function BestSelling() {
                             </a>
                             <a href="/category/coffee"
                                 className="inline-block bg-sky-700 p-1 xs:py-1 xs:px-2 rounded-full text-white text-[11px]/3 md:text-sm/3 font-morabba -translate-y-full">
-                                لوازم جانبی و تجهیزات
+                                Accessories & Equipment
                             </a>
                             <h3 className="text-[15px]/5 xs:text-[17px]/6 md:text-xl/6 h-16">
                                 <a href="/product/coffee"
                                     className="tracking-tighter hover:text-orange-500 dark:text-white hover:dark:text-orange-300 transition-colors overflow-y-hidden line-clamp-2">
-                                    قهوه اسپرسو بن مانو مدل پریسکا 250 گرمی
+                                    Ben Mano Espresso Coffee Prisca Model 250g
                                 </a>
                             </h3>
                             <div className="flex items-center gap-x-2 h-7">
                                 <span className="text-red-600 dark:text-red-500 text-xs/3 md:text-sm/3 font-bold">
-                                    موجود نیست
+                                    Out of Stock
                                 </span>
                             </div>
                             <div className="flex justify-between items-center mt-3">

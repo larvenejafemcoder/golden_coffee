@@ -11,7 +11,7 @@ export default function Sidebar({ setShow }) {
             setShow(false)
         }
 
-        if (event.target.textContent === 'پیشخوان') {
+        if (event.target.textContent === 'Dashboard') {
             homePage.current.classList.add('bg-orange-400')
             homePage.current.classList.add('text-white')
         } else {
@@ -32,9 +32,9 @@ export default function Sidebar({ setShow }) {
 
     const showAlert = () => {
         Swal.fire({
-            text: 'شما با موفقیت از حساب کاربری خود خارج شدید',
+            text: 'You have successfully logged out of your account',
             icon: 'success',
-            confirmButtonText: 'متوجه شدم!'
+            confirmButtonText: 'Got it!'
         })
     }
 
@@ -47,7 +47,7 @@ export default function Sidebar({ setShow }) {
                         <path d="m12 5.432 8.159 8.159c.03.03.06.058.091.086v6.198c0 1.035-.84 1.875-1.875 1.875H15a.75.75 0 0 1-.75-.75v-4.5a.75.75 0 0 0-.75-.75h-3a.75.75 0 0 0-.75.75V21a.75.75 0 0 1-.75.75H5.625a1.875 1.875 0 0 1-1.875-1.875v-6.198a2.29 2.29 0 0 0 .091-.086L12 5.432Z" />
                     </svg>
 
-                    پیشخوان
+                    Dashboard
                 </NavLink>
             </li>
             <li onClick={(event) => isActiveMenu(event)}>
@@ -57,7 +57,7 @@ export default function Sidebar({ setShow }) {
                     </svg>
 
 
-                    سفارش ها
+                    Orders
                 </NavLink>
             </li>
             <li onClick={(event) => isActiveMenu(event)}>
@@ -67,7 +67,7 @@ export default function Sidebar({ setShow }) {
                     </svg>
 
 
-                    تیکت ها
+                    Tickets
                 </NavLink>
             </li>
             <li onClick={(event) => isActiveMenu(event)}>
@@ -77,7 +77,7 @@ export default function Sidebar({ setShow }) {
                     </svg>
 
 
-                    جزئیات حساب
+                    Account Details
                 </NavLink>
             </li>
             <li>
@@ -86,14 +86,14 @@ export default function Sidebar({ setShow }) {
                         <path fillRule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm8.706-1.442c1.146-.573 2.437.463 2.126 1.706l-.709 2.836.042-.02a.75.75 0 0 1 .67 1.34l-.04.022c-1.147.573-2.438-.463-2.127-1.706l.71-2.836-.042.02a.75.75 0 1 1-.671-1.34l.041-.022ZM12 9a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Z" clipRule="evenodd" />
                     </svg>
 
-                    پنل مدیریت
+                    Admin Panel
                 </a>
             </li>
             <li>
                 <button className="flex items-center p-3 w-full rounded hover:bg-orange-400 hover:text-white transition-colors text-base" onClick={showAlert}>
                     <svg stroke="currentColor" fill="currentColor" strokeWidth="0" version="1.1" viewBox="0 0 16 16" className="w-4 h-4 ml-1.5" xmlns="http://www.w3.org/2000/svg"><path d="M12 10v-2h-5v-2h5v-2l3 3zM11 9v4h-5v3l-6-3v-13h11v5h-1v-4h-8l4 2v9h4v-3z"></path></svg>
 
-                    خروج
+                    Logout
                 </button>
             </li>
         </ul>

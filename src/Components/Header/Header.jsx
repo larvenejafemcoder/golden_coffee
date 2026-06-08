@@ -18,32 +18,32 @@ export default function Header() {
 
             <ul className="flex items-center gap-x-5 ipad:gap-x-7 text-lg text-gray-300 tracking-tightest child-hover:text-orange-300">
               <li className='transition-colors'>
-                <a href="/"> صفحه اصلی </a>
+                <a href="/"> Home Page </a>
               </li>
               <li className="relative leading-[56px] group">
-                <a href="/shop"  className="group-hover:text-orange-300 transition-colors"> فروشگاه </a>
+                <a href="/shop"  className="group-hover:text-orange-300 transition-colors"> Shop </a>
 
                 <div
                   className="absolute p-5 top-full space-y-3 w-52 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all bg-white dark:bg-zinc-700 text-zinc-700 dark:text-white text-base rounded-2xl border-t-[3px] border-orange-300 shadow-normal child:inline-block child:transition-colors child-hover:text-orange-400 dark:child-hover:text-orange-300 tracking-normal">
-                  <a href="#"> لورم اپیسوم </a>
+                  <a href="#"> Lorem Ipsum </a>
                   <br />
-                  <a href="#"> لورم اپیسوم </a>
+                  <a href="#"> Lorem Ipsum </a>
                   <br />
-                  <a href="#"> لورم اپیسوم </a>
+                  <a href="#"> Lorem Ipsum </a>
                   <br />
-                  <a href="#"> لورم اپیسوم </a>
+                  <a href="#"> Lorem Ipsum </a>
                   <br />
-                  <a href="#"> لورم اپیسوم </a>
+                  <a href="#"> Lorem Ipsum </a>
                 </div>
               </li>
               <li className="transition-colors">
-                <a href="/blogs" > بلاگ </a>
+                <a href="/blogs" > Blog </a>
               </li>
               <li className="transition-colors">
-                <a href="/about-us" > درباره ما </a>
+                <a href="/about-us" > About Us </a>
               </li>
               <li className="transition-colors">
-                <a href="/contact-us" > تماس با ما </a>
+                <a href="/contact-us" > Contact Us </a>
               </li>
             </ul>
           </nav>
@@ -62,7 +62,7 @@ export default function Header() {
                   className="absolute left-0 p-5 top-full space-y-3 w-[350px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all bg-white dark:bg-zinc-700 text-zinc-700 dark:text-white text-base rounded-2xl border-t-[3px] border-orange-300 shadow-normal ">
 
                   <div className="text-xs font-dana-medium tracking-tighter -mb-3.5">
-                    <span className="text-gray-400 dark:text-gray-300 cursor-default"> 1 مورد</span>
+                    <span className="text-gray-400 dark:text-gray-300 cursor-default"> 1 item</span>
                   </div>
 
                   <div
@@ -75,9 +75,9 @@ export default function Header() {
                         <div className='flex justify-between items-start gap-x-2'>
                           <a href='/product/coffee'
                             className="font-dana-medium text-zinc-700 dark:text-white text-base/5 line-clamp-2 hover:text-orange-400 dark:hover:text-orange-300 transition-colors">
-                            قهوه
-                            اسپرسو بن
-                            مانو مدل پریسکا 250 گرمی </a>
+                            Ben Mano
+                            Espresso Coffee
+                            Prisca Model 250g </a>
                           <div className='border-[1px] border-zinc-700 dark:border-gray-200 rounded-full p-[2px]'>
                             <svg className="w-3 h-3 text-zinc-600 dark:text-white" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"
                               strokeWidth="2.5" stroke="currentColor">
@@ -98,7 +98,7 @@ export default function Header() {
                           </span>
                           <span className="inline-block font-bold text-base/5 text-teal-600 dark:text-teal-500 tracking-tighter">
                             175,000,000
-                            <span className="text-xs font-bold dark:font-normal"> تومان </span>
+                            <span className="text-xs font-bold dark:font-normal"> Toman </span>
                           </span>
                         </div>
                       </div>
@@ -107,13 +107,13 @@ export default function Header() {
 
                   <div className="flex justify-between items-center pt-1">
                     <div>
-                      <p className="text-gray-600 dark:text-gray-300 text-[11px]"> مبلغ قابل پرداخت </p>
+                      <p className="text-gray-600 dark:text-gray-300 text-[11px]"> Amount Payable </p>
                       <span className="font-bold text-md"> 350,000 </span>
-                      <span className="text-xs font-bold">تومان</span>
+                      <span className="text-xs font-bold">Toman</span>
                     </div>
                     <a href="/order"
                       className="bg-teal-600 hover:bg-teal-700 transition-colors text-white rounded-lg p-3">
-                      ثبت سفارش
+                      Place Order
                     </a>
                   </div>
                 </div>
@@ -143,7 +143,7 @@ export default function Header() {
                 <path strokeLinecap="round" strokeLinejoin="round"
                   d="M8.25 9V5.25A2.25 2.25 0 0 1 10.5 3h6a2.25 2.25 0 0 1 2.25 2.25v13.5A2.25 2.25 0 0 1 16.5 21h-6a2.25 2.25 0 0 1-2.25-2.25V15M12 9l3 3m0 0-3 3m3-3H2.25" />
               </svg>
-              <span className="hidden ipad:-webkit-box ipad:max-w-48 ipad:line-clamp-1">ورود | ثبت نام</span>
+              <span className="hidden ipad:-webkit-box ipad:max-w-48 ipad:line-clamp-1">Login | Register</span>
             </a>
           </div>
 
@@ -220,7 +220,7 @@ export default function Header() {
                   <path strokeLinecap="round" strokeLinejoin="round"
                     d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
                 </svg>
-                صفحه اصلی
+                Home Page
               </a>
             </li>
             <li>
@@ -231,7 +231,7 @@ export default function Header() {
                     <path strokeLinecap="round" strokeLinejoin="round"
                       d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
                   </svg>
-                  فروشگاه
+                   Shop
                 </a>
                 <div>
                   <span className="open-submenu-btn" onClick={() => setShowSubMenu(!showSubMenu)}>
@@ -243,11 +243,11 @@ export default function Header() {
                 </div>
               </div>
               <div className={`submenu ${showSubMenu ? "" : "submenu-hidden"}`}>
-                <a href="#"> لورم اپیسوم </a>
-                <a href="#"> لورم اپیسوم </a>
-                <a href="#"> لورم اپیسوم </a>
-                <a href="#"> لورم اپیسوم </a>
-                <a href="#"> لورم اپیسوم </a>
+                <a href="#"> Lorem Ipsum </a>
+                <a href="#"> Lorem Ipsum </a>
+                <a href="#"> Lorem Ipsum </a>
+                <a href="#"> Lorem Ipsum </a>
+                <a href="#"> Lorem Ipsum </a>
               </div>
             </li>
             <li className="flex justify-between items-center">
@@ -259,7 +259,7 @@ export default function Header() {
                   <path
                     d="M5.082 14.254a8.287 8.287 0 0 0-1.308 5.135 9.687 9.687 0 0 1-1.764-.44l-.115-.04a.563.563 0 0 1-.373-.487l-.01-.121a3.75 3.75 0 0 1 3.57-4.047ZM20.226 19.389a8.287 8.287 0 0 0-1.308-5.135 3.75 3.75 0 0 1 3.57 4.047l-.01.121a.563.563 0 0 1-.373.486l-.115.04c-.567.2-1.156.349-1.764.441Z" />
                 </svg>
-                درباره ما
+                About Us
               </a>
             </li>
             <li className="flex justify-between items-center">
@@ -269,7 +269,7 @@ export default function Header() {
                   <path strokeLinecap="round" strokeLinejoin="round"
                     d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z" />
                 </svg>
-                بلاگ
+                Blog
               </a>
             </li>
             <li className="flex justify-between items-center">
@@ -279,7 +279,7 @@ export default function Header() {
                   <path strokeLinecap="round" strokeLinejoin="round"
                     d="M20.25 3.75v4.5m0-4.5h-4.5m4.5 0-6 6m3 12c-8.284 0-15-6.716-15-15V4.5A2.25 2.25 0 0 1 4.5 2.25h1.372c.516 0 .966.351 1.091.852l1.106 4.423c.11.44-.054.902-.417 1.173l-1.293.97a1.062 1.062 0 0 0-.38 1.21 12.035 12.035 0 0 0 7.143 7.143c.441.162.928-.004 1.21-.38l.97-1.293a1.125 1.125 0 0 1 1.173-.417l4.423 1.106c.5.125.852.575.852 1.091V19.5a2.25 2.25 0 0 1-2.25 2.25h-2.25Z" />
                 </svg>
-                تماس با ما
+                Contact Us
               </a>
             </li>
           </ul>
@@ -292,7 +292,7 @@ export default function Header() {
                 <path strokeLinecap="round" strokeLinejoin="round"
                   d="M8.25 9V5.25A2.25 2.25 0 0 1 10.5 3h6a2.25 2.25 0 0 1 2.25 2.25v13.5A2.25 2.25 0 0 1 16.5 21h-6a2.25 2.25 0 0 1-2.25-2.25V15M12 9l3 3m0 0-3 3m3-3H2.25" />
               </svg>
-              <span className='line-clamp-1'>ورود | ثبت نام</span>
+              <span className='line-clamp-1'>Login | Register</span>
             </a>
             <br />
             <span className="inline-flex gap-x-2 items-center toggle-theme" onClick={toggleTheme}>
@@ -306,8 +306,8 @@ export default function Header() {
                 <path strokeLinecap="round" strokeLinejoin="round"
                   d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" />
               </svg>
-              <span className="block dark:hidden"> تم تیره </span>
-              <span className="hidden dark:block"> تم روشن </span>
+              <span className="block dark:hidden"> Dark Theme </span>
+              <span className="hidden dark:block"> Light Theme </span>
             </span>
           </div>
         </div>
@@ -362,7 +362,7 @@ export default function Header() {
               </svg>
             </div>
             <span className="text-zinc-700 dark:text-white font-dana-medium">
-              سبد خرید
+              Cart
             </span>
           </div>
 
@@ -375,9 +375,9 @@ export default function Header() {
                 <div className='flex justify-between items-start gap-x-2'>
                   <a href='/product/coffee'
                     className="font-dana-medium text-zinc-700 dark:text-white text-base/5 line-clamp-2 hover:text-orange-400 dark:hover:text-orange-300 transition-colors">
-                    قهوه
-                    اسپرسو بن
-                    مانو مدل پریسکا 250 گرمی </a>
+                    Ben Mano
+                    Espresso Coffee
+                    Prisca Model 250g </a>
                   <div className='border-[1px] border-zinc-700 dark:border-gray-200 rounded-full p-[2px]'>
                     <svg className="w-3 h-3 text-zinc-600 dark:text-white" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"
                       strokeWidth="2.5" stroke="currentColor">
@@ -398,7 +398,7 @@ export default function Header() {
                   </span>
                   <span className="inline-block font-bold text-base/5 text-teal-600 dark:text-teal-500 tracking-tighter">
                     175,000,000
-                    <span className="text-xs font-bold dark:font-normal"> تومان </span>
+                    <span className="text-xs font-bold dark:font-normal"> Toman </span>
                   </span>
                 </div>
               </div>
@@ -411,9 +411,9 @@ export default function Header() {
                 <div className='flex justify-between items-start gap-x-2'>
                   <a href='/product/coffee'
                     className="font-dana-medium text-zinc-700 dark:text-white text-base/5 line-clamp-2 hover:text-orange-400 dark:hover:text-orange-300 transition-colors">
-                    قهوه
-                    اسپرسو بن
-                    مانو مدل پریسکا 250 گرمی </a>
+                    Ben Mano
+                    Espresso Coffee
+                    Prisca Model 250g </a>
                   <div className='border-[1px] border-zinc-700 dark:border-gray-200 rounded-full p-[2px]'>
                     <svg className="w-3 h-3 text-zinc-600 dark:text-white" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"
                       strokeWidth="2.5" stroke="currentColor">
@@ -434,7 +434,7 @@ export default function Header() {
                   </span>
                   <span className="inline-block font-bold text-base/5 text-teal-600 dark:text-teal-500 tracking-tighter">
                     175,000,000
-                    <span className="text-xs font-bold dark:font-normal"> تومان </span>
+                    <span className="text-xs font-bold dark:font-normal"> Toman </span>
                   </span>
                 </div>
               </div>
@@ -444,13 +444,13 @@ export default function Header() {
           <div className="text-orange-400 dark:text-orange-300 mt-auto">
             <div className="flex justify-between items-center">
               <div>
-                <p className="text-gray-600 dark:text-gray-300 text-[10px]"> مبلغ قابل پرداخت </p>
+                <p className="text-gray-600 dark:text-gray-300 text-[10px]"> Amount Payable </p>
                 <span className="font-bold text-xs"> 350,000 </span>
-                <span className="text-[10px] font-bold">تومان</span>
+                <span className="text-[10px] font-bold">Toman</span>
               </div>
               <a href="/order"
                 className="bg-teal-600 hover:bg-teal-700 transition-colors text-white rounded-lg px-2 py-3 text-[14px] tracking-tighter">
-                ثبت سفارش
+                Place Order
               </a>
             </div>
           </div>

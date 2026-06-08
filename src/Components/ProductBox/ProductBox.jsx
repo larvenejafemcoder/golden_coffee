@@ -12,12 +12,12 @@ export default function ProductBox() {
             </a>
             <a href="/category/coffee"
                 className="inline-block bg-sky-700 p-1 xs:py-1 xs:px-2 rounded-full text-white text-[11px]/3 md:text-sm/3 font-morabba -translate-y-full">
-                لوازم جانبی و تجهیزات
+                Accessories & Equipment
             </a>
             <h3 className="text-[15px]/5 xs:text-[17px]/6 md:text-xl/6 h-16">
                 <a href="/product/coffee"
                     className="tracking-tighter hover:text-orange-500 dark:text-white hover:dark:text-orange-300 transition-colors overflow-y-hidden line-clamp-2">
-                    قهوه اسپرسو بن مانو مدل پریسکا 250 گرمی
+                    Ben Mano Espresso Coffee Prisca Model 250g
                 </a>
             </h3>
             <div className="flex items-center gap-x-2 h-7">
@@ -26,7 +26,7 @@ export default function ProductBox() {
                 <span
                     className="text-[13px]/3 xs:text-[15px]/3 font-dana-bold text-emerald-600 dark:text-emerald-500">
                     2,000,000
-                    <span className="text-xs tracking-tightest font-dana"> تومان </span>
+                    <span className="text-xs tracking-tightest font-dana"> Toman </span>
                 </span>
             </div>
             <div className="flex justify-between items-center mt-3">

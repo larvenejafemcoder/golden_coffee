@@ -7,11 +7,11 @@ export default function LastProducts() {
         <section className="products-section pt-8 md:pt-20 lg:pt-36 bg-no-repeat">
             <div className="container mt-5">
                 <SectionHeader
-                    title="جدیدترین محصولات"
-                    subTitle="فرآوری شده از دانه قهوه">
+                    title="Newest Products"
+                    subTitle="Processed from coffee beans">
                     <a href="/shop"
                         className="flex justify-center items-center md:gap-x-0.5 pr-3 pl-1 h-11 rounded-lg transition-colors text-orange-400 dark:text-orange-300 hover:dark:bg-orange-300/20 hover:bg-orange-300/35 text-sm xs:text-lg ipad:text-xl tracking-tightest">
-                        مشاهده همه
+                        View All
                         <svg className="w-4 h-4 xs:w-5 xs:h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                             <path fillRule="evenodd"
                                 d="M11.78 5.22a.75.75 0 0 1 0 1.06L8.06 10l3.72 3.72a.75.75 0 1 1-1.06 1.06l-4.25-4.25a.75.75 0 0 1 0-1.06l4.25-4.25a.75.75 0 0 1 1.06 0Z"
@@ -39,17 +39,17 @@ export default function LastProducts() {
                         </a>
                         <a href="/category/coffee"
                             className="inline-block bg-sky-700 p-1 xs:py-1 xs:px-2 rounded-full text-white text-[11px]/3 md:text-sm/3 font-morabba -translate-y-full">
-                            لوازم جانبی و تجهیزات
+                            Accessories & Equipment
                         </a>
                         <h3 className="text-[15px]/5 xs:text-[17px]/6 md:text-xl/6 h-16">
                             <a href="/product/coffee"
                                 className="tracking-tighter hover:text-orange-500 dark:text-white hover:dark:text-orange-300 transition-colors overflow-y-hidden line-clamp-2">
-                                قهوه اسپرسو بن مانو مدل پریسکا 250 گرمی
+                                Ben Mano Espresso Coffee Prisca Model 250g
                             </a>
                         </h3>
                         <div className="flex items-center gap-x-2 h-7">
                             <span className="text-red-600 dark:text-red-500 text-xs/3 md:text-sm/3 font-bold">
-                                موجود نیست
+                                Out of Stock
                             </span>
                         </div>
                         <div className="flex justify-between items-center mt-3">

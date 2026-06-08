@@ -8,24 +8,36 @@ import ProductBox from '../../Components/ProductBox/ProductBox'
 export default function Shop() {
     return (
         <>
-            <TitlePage title="فروشگاه" />
+            <TitlePage title="Shop" />
             <Header />
             <section className='shop-header mt-7 md:mt-0 h-60 xs:h-80 md:h-screen bg-shop-header bg-no-repeat bg-cover bg-[center_top] xs:bg-[left_top]'>
                 <div className="container flex items-center h-full">
-                    <h1 className='text-2xl xs:text-3xl sm:text-4xl md:text-5xl ipad:text-6xl select-none font-morabba-bold text-white'> فروشگاه محصولات </h1>
+                    <h1 className='text-2xl xs:text-3xl sm:text-4xl md:text-5xl ipad:text-6xl select-none font-morabba-bold text-white'> 製品 <span className='text-base md:text-2xl'>|</span> Product Store </h1>
+                </div>
+            </section>
+            <section className='shop-about my-10 md:my-16'>
+                <div className="container">
+                    <div className="bg-white dark:bg-zinc-700 dark:text-white rounded-lg p-6 md:p-8">
+                        <h2 className='text-2xl md:text-3xl font-morabba-medium border-b-2 border-b-black dark:border-b-orange-300 w-max dark:text-orange-300 pb-1'> 製品について <span className='text-sm'>|</span> About Our Products </h2>
+                        <p className='mt-5 leading-relaxed'>
+                            私たちは、生産工程、製品の種類と品質、サービス、流通において先駆者となることを目指しています。それにより、イランの生産者たちの手本となり、イランにおけるコーヒー文化の基準となる存在を目指します。
+                            <br /><br />
+                            We strive to be a pioneer in production processes, product variety and quality, services, and distribution — serving as a model for local producers and becoming a reference for coffee culture. We believe that the perception of Iranian goods among the people of Iran and the region must improve, and we pursue this goal with passion and dedication.
+                        </p>
+                    </div>
                 </div>
             </section>
             <section className='shop my-12 md:my-20'>
                 <div className="container">
                     <SectionHeader
-                        title="همه محصولات"
+                        title="全商品 | All Products"
                     >
                         <select className='w-32 xs:w-52 py-2 text-white text-[13px] xs:text-base bg-gray-400 dark:bg-gray-500 rounded-md focus:outline-none'>
-                            <option value="جدید ترین">جدید ترین</option>
-                            <option value="ارزان ترین">ارزان ترین</option>
-                            <option value="گران ترین">گران ترین</option>
-                            <option value="تخفیفی ترین">تخفیفی ترین</option>
-                            <option value="محبوب ترین">محبوب ترین</option>
+                            <option value="جدید ترین">Newest · 最新</option>
+                            <option value="ارزان ترین">Cheapest · 最安</option>
+                            <option value="گران ترین">Most Expensive · 最高価格</option>
+                            <option value="تخفیفی ترین">Biggest Discount · 最大割引</option>
+                            <option value="محبوب ترین">Most Popular · 人気</option>
                         </select>
                     </SectionHeader>
                     <div className="products mt-12 md:mt-16 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2 xs:gap-3 md:gap-4">
@@ -40,17 +52,17 @@ export default function Shop() {
                             </a>
                             <a href="/category/coffee"
                                 className="inline-block bg-sky-700 p-1 xs:py-1 xs:px-2 rounded-full text-white text-[11px]/3 md:text-sm/3 font-morabba -translate-y-full">
-                                لوازم جانبی و تجهیزات
+                                Accessories & Equipment
                             </a>
                             <h3 className="text-[15px]/5 xs:text-[17px]/6 md:text-xl/6 h-16">
                                 <a href="/product/coffee"
                                     className="tracking-tighter hover:text-orange-500 dark:text-white hover:dark:text-orange-300 transition-colors overflow-y-hidden line-clamp-2">
-                                    قهوه اسپرسو بن مانو مدل پریسکا 250 گرمی
+                                    ベン・マーノ エスプレッソコーヒー プリスカ モデル 250g
                                 </a>
                             </h3>
                             <div className="flex items-center gap-x-2 h-7">
                                 <span className="text-red-600 dark:text-red-500 text-xs/3 md:text-sm/3 font-bold">
-                                    موجود نیست
+                                    Out of Stock
                                 </span>
                             </div>
                             <div className="flex justify-between items-center mt-3">

@@ -26,14 +26,13 @@ export default function Home() {
                     className="home mt-16 md:mt-0 h-50 xs:h-auto xs:aspect-[2/1] md:aspect-auto bg-home-mobile md:bg-home-desktop bg-no-repeat bg-cover bg-[center_top]">
                     <div className="container relative overflow-y-hidden flex items-center justify-end h-full md:min-h-screen">
                         <div className="select-none text-white">
-                            <h2 className="font-morabba-bold text-xl xs:text-3xl md:text-5xl/[62px] mb-0.5 md:mb-2">قهوه عربیکا
-                                تانزانیکا
+                            <h2 className="font-morabba-bold text-xl xs:text-3xl md:text-5xl/[62px] mb-0.5 md:mb-2">Tanzanica Arabica
+                                Coffee
                             </h2>
-                            <span className="font-morabba text-lg xs:text-2xl md:text-4xl/[64px]">یک فنجان بالانس</span>
+                            <span className="font-morabba text-lg xs:text-2xl md:text-4xl/[64px]">A Balanced Cup · バランスの一杯</span>
                             <span className="block w-27 h-px md:h-0.5 bg-orange-300 my-2 xs:my-3 md:my-7"></span>
                             <p className="max-w-44 xs:max-w-52 sm:max-w-64 md:max-w-[420px] text-xs md:text-xl">
-                                قطعا نام آشنای عربیکا را شنیده اید، عربیکا یکی از گونه های قهوه است که در نواحی مختلف کمربند
-                                قهوه کشت میشود.
+                                アラビカという名前はきっと誰もが聞いたことがあるでしょう。アラビカはコーヒーベルトのさまざまな地域で栽培されているコーヒー種のひとつです。
                             </p>
                         </div>
 

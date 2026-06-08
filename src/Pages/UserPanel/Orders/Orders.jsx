@@ -13,15 +13,15 @@ export default function Orders() {
 
     return (
         <>
-            <TitlePage title="سفارش ها - پنل کاربری" />
+            <TitlePage title="Orders - User Panel" />
             <section className='counter'>
                 <div className="container-2xl">
                     <div className='boxes-container grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 ipad:grid-cols-2 lg:grid-cols-3 gap-4'>
                         <CounterBox
                             boxColor="bg-slate-500"
-                            title="در حال انجام"
+                            title="In Progress"
                             count={1500}
-                            subTitle="سفارش"
+                            subTitle="Order"
                             iconBg="bg-slate-300/50"
                         >
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-7 h-7 xs:w-9 xs:h-9 text-white">
@@ -31,9 +31,9 @@ export default function Orders() {
                         </CounterBox>
                         <CounterBox
                             boxColor="bg-emerald-500"
-                            title="تکمیل شده"
+                            title="Completed"
                             count={1500}
-                            subTitle="سفارش"
+                            subTitle="Order"
                             iconBg="bg-emerald-300/50"
                         >
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-7 h-7 xs:w-9 xs:h-9 text-white">
@@ -43,9 +43,9 @@ export default function Orders() {
                         </CounterBox>
                         <CounterBox
                             boxColor="bg-red-500"
-                            title="لغو شده"
+                            title="Cancelled"
                             count={1500}
-                            subTitle="سفارش"
+                            subTitle="Order"
                             iconBg="bg-red-300/50"
                         >
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-7 h-7 xs:w-9 xs:h-9 text-white">
@@ -58,13 +58,13 @@ export default function Orders() {
                     <div className="tabs mt-10 border-b-[1px] pb-3 border-b-gray-300 dark:border-b-white/30">
                         <ul className='flex gap-x-5' ref={tab}>
                             <li>
-                                <a className={`cursor-default pb-3 hover:border-b-2 border-b-blue-500 hover:text-blue-600 dark:hover:text-blue-500 font-bold dark:font-normal transition-colors first ${tabActive === 'first' ? "text-blue-600 dark:text-blue-500 border-b-blue-500 border-b-2" : ""}`} onClick={active}> در حال انجام </a>
+                                <a className={`cursor-default pb-3 hover:border-b-2 border-b-blue-500 hover:text-blue-600 dark:hover:text-blue-500 font-bold dark:font-normal transition-colors first ${tabActive === 'first' ? "text-blue-600 dark:text-blue-500 border-b-blue-500 border-b-2" : ""}`} onClick={active}> In Progress </a>
                             </li>
                             <li>
-                                <a className={`cursor-default pb-3 hover:border-b-2 border-b-blue-500 hover:text-blue-600 dark:hover:text-blue-500 font-bold dark:font-normal transition-colors second ${tabActive === 'second' ? "text-blue-600 dark:text-blue-500 border-b-blue-500 border-b-2" : ""}`} onClick={active}> تکمیل شده </a>
+                                <a className={`cursor-default pb-3 hover:border-b-2 border-b-blue-500 hover:text-blue-600 dark:hover:text-blue-500 font-bold dark:font-normal transition-colors second ${tabActive === 'second' ? "text-blue-600 dark:text-blue-500 border-b-blue-500 border-b-2" : ""}`} onClick={active}> Completed </a>
                             </li>
                             <li>
-                                <a className={`cursor-default pb-3 hover:border-b-2 border-b-blue-500 hover:text-blue-600 dark:hover:text-blue-500 font-bold dark:font-normal transition-colors last ${tabActive === 'last' ? "text-blue-600 dark:text-blue-500 border-b-blue-500 border-b-2" : ""}`} onClick={active}> لغو شده </a>
+                                <a className={`cursor-default pb-3 hover:border-b-2 border-b-blue-500 hover:text-blue-600 dark:hover:text-blue-500 font-bold dark:font-normal transition-colors last ${tabActive === 'last' ? "text-blue-600 dark:text-blue-500 border-b-blue-500 border-b-2" : ""}`} onClick={active}> Cancelled </a>
                             </li>
                         </ul>
                     </div>
@@ -79,14 +79,14 @@ export default function Orders() {
                                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4 xs:w-5 xs:h-5">
                                                         <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 12c0-1.232-.046-2.453-.138-3.662a4.006 4.006 0 0 0-3.7-3.7 48.678 48.678 0 0 0-7.324 0 4.006 4.006 0 0 0-3.7 3.7c-.017.22-.032.441-.046.662M19.5 12l3-3m-3 3-3-3m-12 3c0 1.232.046 2.453.138 3.662a4.006 4.006 0 0 0 3.7 3.7 48.656 48.656 0 0 0 7.324 0 4.006 4.006 0 0 0 3.7-3.7c.017-.22.032-.441.046-.662M4.5 12l3 3m-3-3-3 3" />
                                                     </svg>
-                                                    در حال انجام
+                                                    In Progress
                                                 </>
                                             ) : (tabActive === 'second') ? (
                                                 <>
                                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4 xs:w-5 xs:h-5">
                                                         <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
                                                     </svg>
-                                                    تکمیل شده
+                                                    Completed
                                                 </>
                                             ) : (
                                                 <>
@@ -94,7 +94,7 @@ export default function Orders() {
                                                         <path strokeLinecap="round" strokeLinejoin="round" d="m9.75 9.75 4.5 4.5m0-4.5-4.5 4.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
                                                     </svg>
 
-                                                    لغو شده
+                                                    Cancelled
                                                 </>
                                             )
                                         }
@@ -103,7 +103,7 @@ export default function Orders() {
                                 <div className='text-end child:xs:text-sm'>
                                     <p className='text-xs'>1402/12/25</p>
                                     <p className='text-xs'>
-                                        قیمت:
+                                        Price:
                                         300,000,000
                                     </p>
                                 </div>
@@ -131,7 +131,7 @@ export default function Orders() {
                                 </div>
                             </div>
                             <div className='mt-4 text-end'>
-                                <a href="#" className='btn-orange py-1 px-2 xs:py-2 xs:px-3 rounded-full text-xs xs:text-sm'> مشاهده فاکتور </a>
+                                <a href="#" className='btn-orange py-1 px-2 xs:py-2 xs:px-3 rounded-full text-xs xs:text-sm'> View Invoice </a>
                             </div>
                         </div>
                     </div>

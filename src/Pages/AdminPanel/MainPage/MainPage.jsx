@@ -43,15 +43,15 @@ export default function MainPage() {
 
     return (
         <>
-            <TitlePage title="صفحه اصلی پنل مدیریت" />
+            <TitlePage title="Admin Panel Homepage" />
             <section>
                 <div className='topbar'>
                     <nav className='grid grid-cols-1 xs:grid-cols-2 md:grid-cols-3 justify-center items-center gap-3'>
                         <CounterBox
                             boxColor="bg-sky-500"
-                            title="ثبت نامی ها"
+                            title="Registrations"
                             count={1500}
-                            subTitle="کاربر"
+                            subTitle="User"
                             iconBg="bg-sky-300/50"
                         >
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.8} stroke="currentColor" className="w-7 text-white">
@@ -60,9 +60,9 @@ export default function MainPage() {
                         </CounterBox>
                         <CounterBox
                             boxColor="bg-rose-500"
-                            title="میزان فروش"
+                            title="Sales Rate"
                             count={80}
-                            subTitle="درصد"
+                            subTitle="Percent"
                             iconBg="bg-rose-300/50"
                         >
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.8} stroke="currentColor" className="w-7 text-white">
@@ -71,9 +71,9 @@ export default function MainPage() {
                         </CounterBox>
                         <CounterBox
                             boxColor="bg-emerald-500"
-                            title="میزان سود"
+                            title="Profit Rate"
                             count={72}
-                            subTitle="درصد"
+                            subTitle="Percent"
                             iconBg="bg-emerald-300/50"
                         >
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.8} stroke="currentColor" className="w-7 text-white">
@@ -84,7 +84,7 @@ export default function MainPage() {
                 </div>
                 <div className='chart mt-8'>
                     <AdminPanelTableTitle
-                        title="میزان فروش و سود"
+                        title="Sales and Profit"
                         isList={true}
                         breakPoint='w-[980px] md:w-full'
                     >
@@ -96,107 +96,107 @@ export default function MainPage() {
                                 <XAxis dataKey="name" tick={<CustomXTick />} />
                                 <YAxis tick={<CustomYTick />} />
                                 <Tooltip content={<CustomTooltip />} />
-                                <Line type="monotone" dataKey="فروش" strokeOpacity={opacity.profit} stroke="#ef4444" activeDot={{ r: 8 }} />
-                                <Line type="monotone" dataKey="سود" strokeOpacity={opacity.sell} stroke="#10b981" />
+                                <Line type="monotone" dataKey="Sales" strokeOpacity={opacity.profit} stroke="#ef4444" activeDot={{ r: 8 }} />
+                                <Line type="monotone" dataKey="Profit" strokeOpacity={opacity.sell} stroke="#10b981" />
                             </LineChart>
                         </ResponsiveContainer>
                     </AdminPanelTableTitle>
                 </div>
                 <div className='grid grid-cols-1 md:grid-cols-2 ipad:grid-cols-1 lg:grid-cols-2 justify-center items-start gap-4 mt-8'>
                     <AdminPanelTableTitle
-                        title="ثبت نامی های اخیر"
+                        title="Recent Registrations"
                         isList={true}
                     >
                         <DataTable
                             headerItemCount={2}
-                            headerItemTitle={['نام کاربر', 'تاریخ']}
+                            headerItemTitle={['User Name', 'Date']}
                             sectionsTableWidth={['w-[inherit]', 'w-16 sm:w-20']}
                         >
                             <tr>
                                 <td className='w-14 text-xs'>1</td>
-                                <td className='line-clamp-2 w-[inherit]'> آرین محمودی </td>
+                                <td className='line-clamp-2 w-[inherit]'> Arian Mahmoudi </td>
                                 <td className='w-16 sm:w-20'> 1403/2/28 </td>
                             </tr>
                             <tr>
                                 <td className='w-14 text-xs'>2</td>
-                                <td className='line-clamp-2 w-[inherit]'> مهدی حسینی </td>
+                                <td className='line-clamp-2 w-[inherit]'> Mehdi Hosseini </td>
                                 <td className='w-16 sm:w-20'> 1403/2/17 </td>
                             </tr>
                             <tr>
                                 <td className='w-14 text-xs'>3</td>
-                                <td className='line-clamp-2 w-[inherit]'> بابک تسمی </td>
+                                <td className='line-clamp-2 w-[inherit]'> Babak Tasmi </td>
                                 <td className='w-16 sm:w-20'> 1403/2/9 </td>
                             </tr>
                             <tr>
                                 <td className='w-14 text-xs'>4</td>
-                                <td className='line-clamp-2 w-[inherit]'> قدیر یلمه </td>
+                                <td className='line-clamp-2 w-[inherit]'> Ghadir Yelmeh </td>
                                 <td className='w-16 sm:w-20'> 1403/2/2 </td>
                             </tr>
                             <tr>
                                 <td className='w-14 text-xs'>5</td>
-                                <td className='line-clamp-2 w-[inherit]'> هادی حیدری آذر</td>
+                                <td className='line-clamp-2 w-[inherit]'> Hadi Heidari Azar</td>
                                 <td className='w-16 sm:w-20'> 1403/1/27 </td>
                             </tr>
                         </DataTable>
                     </AdminPanelTableTitle>
                     <AdminPanelTableTitle
-                        title="محصولات پر فروش"
+                        title="Best Selling Products"
                         isList={true}
                     >
                         <DataTable
                             headerItemCount={2}
-                            headerItemTitle={['عنوان کالا', 'تعداد فروش']}
+                            headerItemTitle={['Product Title', 'Sales Count']}
                             sectionsTableWidth={['w-[inherit]', 'w-[88px] sm:w-27 md:w-[135px] ipad:w-24 lg:w-32 xl:w-28']}
                         >
                             <tr>
                                 <td className='w-14 text-xs'>1</td>
                                 <td className='line-clamp-2 w-[inherit]'>
                                     <a href='/product/coffee' className='hover:text-orange-600 dark:hover:text-orange-300 transition-colors'>
-                                        قهوه اسپرسو بن مانو مدل پریسکا 250 گرمی
+                                        Ben Mano Espresso Coffee Prisca Model 250g
                                     </a>
                                 </td>
                                 <td className='w-[88px] sm:w-27 md:w-[135px] ipad:w-24 lg:w-32 xl:w-28'>
-                                    20.2 هزار
+                                    20.2 thousand
                                 </td>
                             </tr>
                             <tr>
                                 <td className='w-14 text-xs'>2</td>
                                 <td className='line-clamp-2 w-[inherit]'>
                                     <a href='/product/coffee' className='hover:text-orange-600 dark:hover:text-orange-300 transition-colors'>
-                                        قهوه اسپرسو بن مانو مدل پریسکا 250 گرمی
+                                        Ben Mano Espresso Coffee Prisca Model 250g
                                     </a>
                                 </td>
                                 <td className='w-[88px] sm:w-27 md:w-[135px] ipad:w-24 lg:w-32 xl:w-28'>
-                                    10.5 هزار
+                                    10.5 thousand
                                 </td>
                             </tr>
                             <tr>
                                 <td className='w-14 text-xs'>3</td>
                                 <td className='line-clamp-2 w-[inherit]'>
                                     <a href='/product/coffee' className='hover:text-orange-600 dark:hover:text-orange-300 transition-colors'>
-                                        قهوه اسپرسو بن مانو مدل پریسکا 250 گرمی
+                                        Ben Mano Espresso Coffee Prisca Model 250g
                                     </a>
                                 </td>
                                 <td className='w-[88px] sm:w-27 md:w-[135px] ipad:w-24 lg:w-32 xl:w-28'>
-                                    4.9 هزار
+                                    4.9 thousand
                                 </td>
                             </tr>
                             <tr>
                                 <td className='w-14 text-xs'>4</td>
                                 <td className='line-clamp-2 w-[inherit]'>
                                     <a href='/product/coffee' className='hover:text-orange-600 dark:hover:text-orange-300 transition-colors'>
-                                        قهوه اسپرسو بن مانو مدل پریسکا 250 گرمی
+                                        Ben Mano Espresso Coffee Prisca Model 250g
                                     </a>
                                 </td>
                                 <td className='w-[88px] sm:w-27 md:w-[135px] ipad:w-24 lg:w-32 xl:w-28'>
-                                    1 هزار
+                                    1 thousand
                                 </td>
                             </tr>
                             <tr>
                                 <td className='w-14 text-xs'>5</td>
                                 <td className='line-clamp-2 w-[inherit]'>
                                     <a href='/product/coffee' className='hover:text-orange-600 dark:hover:text-orange-300 transition-colors'>
-                                        قهوه اسپرسو بن مانو مدل پریسکا 250 گرمی
+                                        Ben Mano Espresso Coffee Prisca Model 250g
                                     </a>
                                 </td>
                                 <td className='w-[88px] sm:w-27 md:w-[135px] ipad:w-24 lg:w-32 xl:w-28'>

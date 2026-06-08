@@ -27,38 +27,38 @@ export default function ProductInfo() {
 
     const showAddToCartAlert = () => {
         Swal.fire({
-            text: 'محصول مورد نظر با موفقیت به سبد خرید اضافه شد',
+            text: 'The selected product has been successfully added to your cart',
             icon: 'success',
-            confirmButtonText: 'متوجه شدم!'
+            confirmButtonText: 'Got it!'
         })
     }
 
     const showAddCommentAlert = () => {
         Swal.fire({
-            text: 'دیدگاه شما با موفقیت ثبت شد',
+            text: 'Your review has been successfully submitted',
             icon: 'success',
-            confirmButtonText: 'متوجه شدم!'
+            confirmButtonText: 'Got it!'
         })
     }
 
     const showAddReplyToCommentAlert = () => {
         Swal.fire({
-            text: 'پاسخ شما به دیدگاه مورد نظر با موفقیت ثبت شد',
+            text: 'Your reply to the review has been successfully submitted',
             icon: 'success',
-            confirmButtonText: 'متوجه شدم!'
+            confirmButtonText: 'Got it!'
         })
     }
 
     return (
         <>
-            <TitlePage title="اطلاعات محصول" />
+            <TitlePage title="Product Info" />
             <Header />
             <section className='product-info mt-28 md:mt-40 mb-16 md:mb-28'>
                 <div className="container">
                     <Breadcrumb
-                        firstTitle="لوازم جانبی و تجهیزات"
+                        firstTitle="Accessories & Equipment"
                         firsTitletLink="/category/coffee"
-                        lastTitle="قهوه اسپرسو بن مانو مدل پریسکا 250 گرمی"
+                        lastTitle="Ben Mano Espresso Coffee Prisca Model 250g"
                         isBg={true}
                     />
 
@@ -123,38 +123,38 @@ export default function ProductInfo() {
                             <div className='flex flex-col bg-white dark:bg-zinc-700 dark:text-white px-4 py-3 rounded-lg'>
                                 <div className='h-12 ipad:h-10 mb-6 ipad:mb-3 xl:mb-6'>
                                     <h1 className='product-title text-lg/6 ipad:text-base/5 xl:text-lg/6 line-clamp-2'>
-                                        قهوه اسپرسو بن مانو مدل پریسکا 250 گرمی
+                                        Ben Mano Espresso Coffee Prisca Model 250g
                                     </h1>
                                 </div>
                                 <div className='flex flex-col xs:flex-row justify-between items-center space-y-2 xs:space-y-0'>
                                     <div className='bg-green-200 text-green-700 w-full xs:w-max text-center px-2 py-1'>
                                         <span className='font-morabba-medium'>
-                                            موجود در انبار
+                                            In Stock
                                         </span>
                                     </div>
                                     <div className='bg-orange-200/80 dark:bg-orange-200 text-orange-600 px-2 py-1 w-full xs:max-w-44 xs:w-max'>
                                         <p className='text-center font-morabba-medium text-sm'>
-                                            دسته بندی
+                                            Category
                                             <br />
                                             <span className='line-clamp-1'>
-                                                لوازم جانبی و تجهیزات و برقییی
+                                                Accessories & Equipment and Electrical
                                             </span>
                                         </p>
                                     </div>
                                 </div>
                             </div>
                             <div className='bg-white dark:bg-zinc-700 dark:text-white px-4 py-3 rounded-lg'>
-                                <h4 className='font-morabba-medium mb-2 ipad:mb-1 lg:mb-4'> درباره محصول </h4>
+                                <h4 className='font-morabba-medium mb-2 ipad:mb-1 lg:mb-4'> About the Product </h4>
                                 <div className='h-27 ipad:h-20 xl:h-36 xs:h-32 mb-4 ipad:mb-4 xl:mb-6'>
                                     <p className='product-about line-clamp-5 ipad:line-clamp-4 xl:line-clamp-6 text-sm xs:text-base ipad:text-sm xl:text-base'>
-                                        ما برآنیم تا با پیشرو بودن در فرآیند تولید، نوع و کیفیت محصول، خدمات و توزیع، الگویی برای تولیدکنندگان ایرانی باشیم و به مرجع فرهنگ قهوه در ایران تبدیل شویم. می‌پنداریم که نظر مردم ایران و منطقه باید نسبت به کالای ایرانی بهبود یابد و در این راستا با اشتیاق می‌کوشیم.
-                                        ما برآنیم تا با پیشرو بودن در فرآیند تولید، نوع و کیفیت محصول، خدمات و توزیع، الگویی برای تولیدکنندگان ایرانی باشیم و به مرجع فرهنگ قهوه در ایران تبدیل شویم. می‌پنداریم که نظر مردم ایران و منطقه باید نسبت به کالای ایرانی بهبود یابد و در این راستا با اشتیاق می‌کوشیم.
-                                        ما برآنیم تا با پیشرو بودن در فرآیند تولید، نوع و کیفیت محصول، خدمات و توزیع، الگویی برای تولیدکنندگان ایرانی باشیم و به مرجع فرهنگ قهوه در ایران تبدیل شویم.
+                                        We aim to be a pioneer in the production process, product type and quality, services and distribution, serving as a model for Iranian producers and becoming a reference for coffee culture in Iran. We believe that the perception of Iranian goods among the people of Iran and the region must improve, and we strive passionately toward this goal.
+                                        We aim to be a pioneer in the production process, product type and quality, services and distribution, serving as a model for Iranian producers and becoming a reference for coffee culture in Iran. We believe that the perception of Iranian goods among the people of Iran and the region must improve, and we strive passionately toward this goal.
+                                        We aim to be a pioneer in the production process, product type and quality, services and distribution, serving as a model for Iranian producers and becoming a reference for coffee culture in Iran.
                                     </p>
                                 </div>
                                 <div className='flex items-center'>
                                     <span>
-                                        امتیاز:
+                                        Rating:
                                     </span>
                                     <div className='flex ms-1.5'>
                                         <svg className="w-4 h-4 text-yellow-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5"
@@ -192,13 +192,13 @@ export default function ProductInfo() {
                             </div>
                             <div className='flex justify-between items-center bg-white dark:bg-zinc-700 dark:text-white px-4 py-3 rounded-lg'>
                                 <div className='me-2'>
-                                    <button className='btn-orange text-sm/4 xs:text-base/4 p-3 rounded-md tracking-tighter' onClick={showAddToCartAlert}> افزودن به سبد </button>
+                                    <button className='btn-orange text-sm/4 xs:text-base/4 p-3 rounded-md tracking-tighter' onClick={showAddToCartAlert}> Add to Cart </button>
                                 </div>
                                 <div className='flex flex-col text-end'>
                                     <span className='text-red-500 dark:text-gray-300 text-[13px] xs:text-sm line-through mb-3'> 2,000,000 </span>
                                     <span className='text-green-600 dark:text-green-500 font-dana-bold text-base/3 xs:text-2xl/3'>
                                         2,000,000
-                                        <span className='text-[10px] xs:text-sm'> تومان </span>
+                                        <span className='text-[10px] xs:text-sm'> Toman </span>
                                     </span>
                                 </div>
                             </div>
@@ -208,27 +208,27 @@ export default function ProductInfo() {
             </section>
             <section className='comments mb-20 md:mb-28'>
                 <div className="container">
-                    <h2 className=' text-3xl/normal font-morabba-medium dark:text-white border-b-2 border-b-black dark:border-b-white w-max'> دیدگاه شما </h2>
+                    <h2 className=' text-3xl/normal font-morabba-medium dark:text-white border-b-2 border-b-black dark:border-b-white w-max'> Your Review </h2>
                     <div className="new-comment bg-white dark:bg-zinc-700 border-2 border-dashed border-gray-500 p-4 rounded-lg mt-5 dark:text-white">
                         <div className='mb-8'>
-                            <label htmlFor="user-score"> امتیاز: </label>
+                            <label htmlFor="user-score"> Rating: </label>
                             <select id="user-score" className='text-black bg-blue-200/30 dark:bg-gray-500 dark:text-white ms-2 py-1 focus:outline-none w-40 rounded-lg'>
-                                <option value="عالی">عالی</option>
-                                <option value="بسیار خوب">بسیار خوب</option>
-                                <option value="خوب">خوب</option>
-                                <option value="متوسط">متوسط</option>
-                                <option value="ضعیف">ضعیف</option>
+                                <option value="عالی">Excellent</option>
+                                <option value="بسیار خوب">Very Good</option>
+                                <option value="خوب">Good</option>
+                                <option value="متوسط">Average</option>
+                                <option value="ضعیف">Poor</option>
                             </select>
                         </div>
                         <div>
-                            <label htmlFor="user-comment-input"> متن دیدگاه شما </label>
-                            <textarea id='user-comment-input' rows="5" className='w-full focus:outline-none rounded-md text-black bg-blue-200/30 dark:bg-gray-500 dark:text-white px-3 py-2 resize-none -mb-2 mt-2 dark:placeholder:text-gray-300' placeholder='دیدگاه خود را بنویسید...'></textarea>
+                            <label htmlFor="user-comment-input"> Your Review Text </label>
+                            <textarea id='user-comment-input' rows="5" className='w-full focus:outline-none rounded-md text-black bg-blue-200/30 dark:bg-gray-500 dark:text-white px-3 py-2 resize-none -mb-2 mt-2 dark:placeholder:text-gray-300' placeholder="Write your review..."></textarea>
                         </div>
                         <button className='btn-orange px-3 py-2 rounded-md mt-6' onClick={showAddCommentAlert}>
-                            ثبت دیدگاه
+                            Submit Review
                         </button>
                     </div>
-                    <h2 className=' text-3xl/normal font-morabba-medium dark:text-white border-b-2 border-b-black dark:border-b-white w-max mt-14'> دیدگاه ها </h2>
+                    <h2 className=' text-3xl/normal font-morabba-medium dark:text-white border-b-2 border-b-black dark:border-b-white w-max mt-14'> Comments </h2>
                     <div className="comments">
                         <div className="flex flex-col gap-y-4 bg-white dark:bg-zinc-700 border-2 border-dashed border-gray-500 p-4 xs:p-5 rounded-lg mt-5 dark:text-white">
                             <div className='flex items-center gap-x-1.5 xs:gap-x-4'>
@@ -271,16 +271,16 @@ export default function ProductInfo() {
                                                 </svg>
                                             </div>
                                         </div>
-                                        <a href='/login' className='btn-orange text-xs xs:text-sm p-2 rounded font-dana-bold'> وارد شوید </a>
+                                        <a href='/login' className='btn-orange text-xs xs:text-sm p-2 rounded font-dana-bold'> Log In </a>
                                     </div>
                                 </div>
                             </div>
                             <div className='comment-content'>
                                 <p className='text-sm xs:text-base'>
-                                    سلام
+                                    Hello
                                     <br />
-                                    ما برآنیم تا با پیشرو بودن در فرآیند تولید، نوع و کیفیت محصول، خدمات و توزیع، الگویی برای تولیدکنندگان ایرانی باشیم و به مرجع فرهنگ قهوه در ایران تبدیل شویم. می‌پنداریم که نظر مردم ایران و منطقه باید نسبت به کالای ایرانی بهبود یابد و در این راستا با اشتیاق می‌کوشیم.
-                                    ما برآنیم تا با پیشرو بودن در فرآیند تولید، نوع و کیفیت محصول، خدمات و توزیع، الگویی برای تولیدکنندگان ایرانی باشیم و به مرجع فرهنگ قهوه در ایران تبدیل شویم. می‌پنداریم که نظر مردم ایران و منطقه باید نسبت به کالای ایرانی بهبود یابد و در این راستا با اشتیاق می‌کوشیم.
+                                    We aim to be a pioneer in the production process, product type and quality, services and distribution, serving as a model for Iranian producers and becoming a reference for coffee culture in Iran. We believe that the perception of Iranian goods among the people of Iran and the region must improve, and we strive passionately toward this goal.
+                                    We aim to be a pioneer in the production process, product type and quality, services and distribution, serving as a model for Iranian producers and becoming a reference for coffee culture in Iran. We believe that the perception of Iranian goods among the people of Iran and the region must improve, and we strive passionately toward this goal.
                                 </p>
 
                                 <div className="reply-container">
@@ -294,10 +294,10 @@ export default function ProductInfo() {
                                         </div>
                                         <div className='reply-content mt-5'>
                                             <p className='text-sm xs:text-base'>
-                                                سلام
+                                                Hello
                                                 <br />
-                                                ما برآنیم تا با پیشرو بودن در فرآیند تولید، نوع و کیفیت محصول، خدمات و توزیع، الگویی برای تولیدکنندگان ایرانی باشیم و به مرجع فرهنگ قهوه در ایران تبدیل شویم. می‌پنداریم که نظر مردم ایران و منطقه باید نسبت به کالای ایرانی بهبود یابد و در این راستا با اشتیاق می‌کوشیم.
-                                                ما برآنیم تا با پیشرو بودن در فرآیند تولید، نوع و کیفیت محصول، خدمات و توزیع، الگویی برای تولیدکنندگان ایرانی باشیم و به مرجع فرهنگ قهوه در ایران تبدیل شویم. می‌پنداریم که نظر مردم ایران و منطقه باید نسبت به کالای ایرانی بهبود یابد و در این راستا با اشتیاق می‌کوشیم.
+                                                We aim to be a pioneer in the production process, product type and quality, services and distribution, serving as a model for Iranian producers and becoming a reference for coffee culture in Iran. We believe that the perception of Iranian goods among the people of Iran and the region must improve, and we strive passionately toward this goal.
+                                                We aim to be a pioneer in the production process, product type and quality, services and distribution, serving as a model for Iranian producers and becoming a reference for coffee culture in Iran. We believe that the perception of Iranian goods among the people of Iran and the region must improve, and we strive passionately toward this goal.
                                             </p>
                                         </div>
                                     </div>
@@ -345,7 +345,7 @@ export default function ProductInfo() {
                                                 </svg>
                                             </div>
                                         </div>
-                                        <div className='text-zinc-700 dark:text-white cursor-pointer' title='پاسخ' onClick={() => setShowReplyCommentModal(true)}>
+                                        <div className='text-zinc-700 dark:text-white cursor-pointer' title='Reply' onClick={() => setShowReplyCommentModal(true)}>
                                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5 xs:w-6 xs:h-6">
                                                 <path fillRule="evenodd" d="M9.53 2.47a.75.75 0 0 1 0 1.06L4.81 8.25H15a6.75 6.75 0 0 1 0 13.5h-3a.75.75 0 0 1 0-1.5h3a5.25 5.25 0 1 0 0-10.5H4.81l4.72 4.72a.75.75 0 1 1-1.06 1.06l-6-6a.75.75 0 0 1 0-1.06l6-6a.75.75 0 0 1 1.06 0Z" clipRule="evenodd" />
                                             </svg>
@@ -355,10 +355,10 @@ export default function ProductInfo() {
                             </div>
                             <div className='comment-content'>
                                 <p className='text-sm xs:text-base'>
-                                    سلام
+                                    Hello
                                     <br />
-                                    ما برآنیم تا با پیشرو بودن در فرآیند تولید، نوع و کیفیت محصول، خدمات و توزیع، الگویی برای تولیدکنندگان ایرانی باشیم و به مرجع فرهنگ قهوه در ایران تبدیل شویم. می‌پنداریم که نظر مردم ایران و منطقه باید نسبت به کالای ایرانی بهبود یابد و در این راستا با اشتیاق می‌کوشیم.
-                                    ما برآنیم تا با پیشرو بودن در فرآیند تولید، نوع و کیفیت محصول، خدمات و توزیع، الگویی برای تولیدکنندگان ایرانی باشیم و به مرجع فرهنگ قهوه در ایران تبدیل شویم. می‌پنداریم که نظر مردم ایران و منطقه باید نسبت به کالای ایرانی بهبود یابد و در این راستا با اشتیاق می‌کوشیم.
+                                    We aim to be a pioneer in the production process, product type and quality, services and distribution, serving as a model for Iranian producers and becoming a reference for coffee culture in Iran. We believe that the perception of Iranian goods among the people of Iran and the region must improve, and we strive passionately toward this goal.
+                                    We aim to be a pioneer in the production process, product type and quality, services and distribution, serving as a model for Iranian producers and becoming a reference for coffee culture in Iran. We believe that the perception of Iranian goods among the people of Iran and the region must improve, and we strive passionately toward this goal.
                                 </p>
 
                                 <div className="reply-container"></div>
@@ -370,25 +370,25 @@ export default function ProductInfo() {
                 <Modal
                     showModalState={showReplyCommentModal}
                     setShowModalState={setShowReplyCommentModal}
-                    title="پاسخ شما"
+                    title="Your Reply"
                 >
                     <div>
-                        <label htmlFor="reply-comment-input" className='text-sm'> متن پاسخ شما </label>
-                        <textarea id="reply-comment-input" className='w-full mt-1 p-2 text-sm outline-none focus:outline-none border-[1px] border-gray-200 dark:border-gray-400 bg-blue-200/30 resize-none dark:bg-gray-500 dark:text-white placeholder:text-zinc-500 dark:placeholder:text-gray-300 rounded' placeholder='پاسخ خود را وارد کنید...' rows={5}></textarea>
+                        <label htmlFor="reply-comment-input" className='text-sm'> Your Reply Text </label>
+                        <textarea id="reply-comment-input" className='w-full mt-1 p-2 text-sm outline-none focus:outline-none border-[1px] border-gray-200 dark:border-gray-400 bg-blue-200/30 resize-none dark:bg-gray-500 dark:text-white placeholder:text-zinc-500 dark:placeholder:text-gray-300 rounded' placeholder="Enter your reply..." rows={5}></textarea>
                     </div>
                     <button className='btn-orange w-full p-2 mt-1.5 rounded' onClick={() => {
                         setShowReplyCommentModal(false)
                         showAddReplyToCommentAlert()
-                    }}> ارسال پاسخ </button>
+                    }}> Send Reply </button>
                 </Modal>
             </section>
             <section className='related-products mb-20'>
                 <div className="container">
                     <SectionHeader
-                        title="کالاهای مرتبط">
+                        title="Related Products">
                         <a href="/category/coffee"
                             className="flex justify-center items-center md:gap-x-0.5 pr-3 pl-1 h-11 rounded-lg transition-colors text-orange-400 dark:text-orange-300 hover:dark:bg-orange-300/20 hover:bg-orange-300/35 text-sm xs:text-lg ipad:text-xl tracking-tightest">
-                            مشاهده همه
+                            View All
                             <svg className="w-4 h-4 xs:w-5 xs:h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                                 <path fillRule="evenodd"
                                     d="M11.78 5.22a.75.75 0 0 1 0 1.06L8.06 10l3.72 3.72a.75.75 0 1 1-1.06 1.06l-4.25-4.25a.75.75 0 0 1 0-1.06l4.25-4.25a.75.75 0 0 1 1.06 0Z"
@@ -435,17 +435,17 @@ export default function ProductInfo() {
                                 </a>
                                 <a href="/category/coffee"
                                     className="inline-block bg-sky-700 p-1 xs:py-1 xs:px-2 rounded-full text-white text-[11px]/3 md:text-sm/3 font-morabba -translate-y-full">
-                                    لوازم جانبی و تجهیزات
+                                    Accessories & Equipment
                                 </a>
                                 <h3 className="text-[15px]/5 xs:text-[17px]/6 md:text-xl/6 h-16">
                                     <a href="/product/coffee"
                                         className="tracking-tighter hover:text-orange-500 dark:text-white hover:dark:text-orange-300 transition-colors overflow-y-hidden line-clamp-2">
-                                        قهوه اسپرسو بن مانو مدل پریسکا 250 گرمی
+                                        Ben Mano Espresso Coffee Prisca Model 250g
                                     </a>
                                 </h3>
                                 <div className="flex items-center gap-x-2 h-7">
                                     <span className="text-red-600 dark:text-red-500 text-xs/3 md:text-sm/3 font-bold">
-                                        موجود نیست
+                                        Out of Stock
                                     </span>
                                 </div>
                                 <div className="flex justify-between items-center mt-3">

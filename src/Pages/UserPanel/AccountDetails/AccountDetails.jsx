@@ -11,40 +11,40 @@ export default function AccountDetails() {
 
     const showAlert = () => {
         Swal.fire({
-            text: 'حساب کاربری شما با موفقیت ویرایش شد',
+            text: 'Your account has been updated successfully',
             icon: 'success',
-            confirmButtonText: 'متوجه شدم!'
+            confirmButtonText: 'Got it!'
         })
     }
 
     return (
         <>
-            <TitlePage title="جزئیات حساب - پنل کاربری" />
+            <TitlePage title="Account Details - User Panel" />
             <section className='my-account-details'>
                 <div className="container-2xl">
                     <div className="details bg-gray-100 dark:bg-zinc-800 p-4 rounded-lg">
-                        <h3 className='font-morabba-medium pb-2 border-b-[1px] border-b-gray-400/50'> جزئیات حساب </h3>
+                        <h3 className='font-morabba-medium pb-2 border-b-[1px] border-b-gray-400/50'> Account Details </h3>
                         <form onSubmit={(event) => event.preventDefault()} className='mt-4'>
                             <div className='grid sm:grid-cols-2 gap-x-3 gap-y-5'>
                                 <div>
-                                    <label htmlFor="name"> نام </label>
-                                    <input type="text" id='name' className='w-full mt-1 p-2 outline-none focus:outline-none dark:bg-blue-200/60 dark:placeholder:text-zinc-200 border-[1px] border-gray-200 dark:border-gray-300 rounded text-sm placeholder:text-gray-600' placeholder='نام جدید خود را وارد کنید...' />
+                                    <label htmlFor="name"> Name </label>
+                                    <input type="text" id='name' className='w-full mt-1 p-2 outline-none focus:outline-none dark:bg-blue-200/60 dark:placeholder:text-zinc-200 border-[1px] border-gray-200 dark:border-gray-300 rounded text-sm placeholder:text-gray-600' placeholder='Enter your new name...' />
                                 </div>
                                 <div>
-                                    <label htmlFor="user-name"> نام کاربری </label>
-                                    <input type="text" id='user-name' className='w-full mt-1 p-2 outline-none focus:outline-none dark:bg-blue-200/60 dark:placeholder:text-zinc-200 border-[1px] border-gray-200 dark:border-gray-300 rounded text-sm placeholder:text-gray-600' placeholder='نام کاربری جدید خود را وارد کنید...' />
+                                    <label htmlFor="user-name"> Username </label>
+                                    <input type="text" id='user-name' className='w-full mt-1 p-2 outline-none focus:outline-none dark:bg-blue-200/60 dark:placeholder:text-zinc-200 border-[1px] border-gray-200 dark:border-gray-300 rounded text-sm placeholder:text-gray-600' placeholder='Enter your new username...' />
                                 </div>
                                 <div>
-                                    <label htmlFor="user-tel"> شماره تماس </label>
-                                    <input type="number" id='user-tel' className='w-full mt-1 p-2 outline-none focus:outline-none dark:bg-blue-200/60 dark:placeholder:text-zinc-200 border-[1px] border-gray-200 dark:border-gray-300 rounded text-sm placeholder:text-gray-600' placeholder='شماره تماس جدید خود را وارد کنید...' />
+                                    <label htmlFor="user-tel"> Phone Number </label>
+                                    <input type="number" id='user-tel' className='w-full mt-1 p-2 outline-none focus:outline-none dark:bg-blue-200/60 dark:placeholder:text-zinc-200 border-[1px] border-gray-200 dark:border-gray-300 rounded text-sm placeholder:text-gray-600' placeholder='Enter your new phone number...' />
                                 </div>
                                 <div>
-                                    <label htmlFor="user-email"> ایمیل </label>
-                                    <input type="email" id='user-email' className='w-full mt-1 p-2 outline-none focus:outline-none dark:bg-blue-200/60 dark:placeholder:text-zinc-200 border-[1px] border-gray-200 dark:border-gray-300 rounded text-sm placeholder:text-gray-600' placeholder='ایمیل جدید خود را وارد کنید...' />
+                                    <label htmlFor="user-email"> Email </label>
+                                    <input type="email" id='user-email' className='w-full mt-1 p-2 outline-none focus:outline-none dark:bg-blue-200/60 dark:placeholder:text-zinc-200 border-[1px] border-gray-200 dark:border-gray-300 rounded text-sm placeholder:text-gray-600' placeholder='Enter your new email...' />
                                 </div>
                                 <div className='relative'>
-                                    <label htmlFor="user-password"> رمز عبور </label>
-                                    <input type={showPassword ? "text" : "password"} id='user-password' className='w-full mt-1 p-2 pl-9 outline-none focus:outline-none dark:bg-blue-200/60 dark:placeholder:text-zinc-200 border-[1px] border-gray-200 dark:border-gray-300 rounded text-sm placeholder:text-gray-600' placeholder='رمز عبور جدید خود را وارد کنید...' />
+                                    <label htmlFor="user-password"> Password </label>
+                                    <input type={showPassword ? "text" : "password"} id='user-password' className='w-full mt-1 p-2 pl-9 outline-none focus:outline-none dark:bg-blue-200/60 dark:placeholder:text-zinc-200 border-[1px] border-gray-200 dark:border-gray-300 rounded text-sm placeholder:text-gray-600' placeholder='Enter your new password...' />
 
                                     <div className='inline'>
                                         <div onClick={() => setShowPassword(!showPassword)}>
@@ -68,7 +68,7 @@ export default function AccountDetails() {
                                     </div>
                                 </div>
                                 <div className='flex justify-between items-center'>
-                                    <label className='sm:mt-5'> پروفایل </label>
+                                    <label className='sm:mt-5'> Profile </label>
                                     <div className='relative flex justify-center items-center'>
                                         <img src="/images/avatars/avatar1.jpg" alt="My Profile Image" className='w-14 h-14 mt-1 rounded-full' />
                                         <span className='absolute text-xs bottom-[15px] cursor-pointer bg-orange-400 hover:bg-orange-500 text-white p-1 rounded transition-colors' onClick={() => setShowModalProfileChange(true)}>
@@ -80,7 +80,7 @@ export default function AccountDetails() {
                                         </span>
                                     </div>
                                 </div>
-                                <button className='btn-orange w-max px-2 py-1 rounded' onClick={showAlert}> تغییر اطلاعات </button>
+                                <button className='btn-orange w-max px-2 py-1 rounded' onClick={showAlert}> Update Info </button>
                             </div>
                         </form>
                     </div>
@@ -89,7 +89,7 @@ export default function AccountDetails() {
                 <Modal
                     showModalState={showModalProfileChange}
                     setShowModalState={setShowModalProfileChange}
-                    title="پروفایل شما"
+                    title="Your Profile"
                 >
                     <div className='avatar-container grid grid-cols-4 xs:grid-cols-6 gap-2 h-[210px] overflow-y-auto'>
                         {
