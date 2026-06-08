@@ -1,4 +1,4 @@
-<img src='public/images/golden-coffee-shop.webp' />
+<img src='public/images/golden-coffee-shop.png' />
 
 # React + Vite
 
