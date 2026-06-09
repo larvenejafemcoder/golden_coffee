@@ -1,8 +1,6 @@
-import { useTranslation } from '../../hooks/useTranslation'
+import { useTranslation } from '@/hooks/useTranslation'
 
-interface FooterProps {}
-
-export default function Footer(_props: FooterProps) {
+export default function Footer() {
     const { t } = useTranslation()
 
     return (

@@ -1,10 +1,8 @@
 import { useState } from 'react'
-import toggleTheme from '../../Features/ToggleTheme/ToggleTheme.js'
-import { useTranslation } from '../../hooks/useTranslation'
+import toggleTheme from '@/Features/ToggleTheme/ToggleTheme'
+import { useTranslation } from '@/hooks/useTranslation'
 
-interface HeaderProps {}
-
-export default function Header(_props: HeaderProps) {
+export default function Header() {
   const { t } = useTranslation()
 
   const [showNavbar, setShowNavbar] = useState(false)

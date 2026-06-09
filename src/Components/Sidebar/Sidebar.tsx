@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react'
-import { NavLink } from 'react-router-dom'
+import { NavLink, useLocation } from 'react-router-dom'
 import Swal from 'sweetalert2'
-import { useTranslation } from '../../hooks/useTranslation'
+import { useTranslation } from '@/hooks/useTranslation'
 
 interface SidebarProps {
   setShow?: (show: boolean) => void
@@ -9,6 +9,7 @@ interface SidebarProps {
 
 export default function Sidebar({ setShow }: SidebarProps) {
   const { t } = useTranslation()
+  const location = useLocation()
 
   const homePage = useRef<HTMLAnchorElement>(null)
 

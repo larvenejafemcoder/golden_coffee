@@ -9,7 +9,9 @@ export default function Orders() {
     const tabRef = useRef<HTMLUListElement>(null)
 
     const handleTabClick = (event: React.MouseEvent<HTMLAnchorElement>) => {
-        setActiveTab(event.currentTarget.classList[9])
+        const classes = Array.from(event.currentTarget.classList)
+        const tab = classes[9] ?? 'first'
+        setActiveTab(tab)
     }
 
     return (

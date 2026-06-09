@@ -26,11 +26,14 @@ export default function MainPage() {
 
   const CustomTooltip = ({ active, payload, label }: CustomTooltipProps) => {
     if (active && payload && payload.length >= 2) {
+      const first = payload[0]
+      const second = payload[1]
+      if (!first || !second) return null
       return (
         <div className='bg-white dark:bg-zinc-700 border-[1px] border-gray-300 dark:border-zinc-500 shadow-lg py-2 px-3 rounded-md'>
           <p className='mb-1'>{label}</p>
-          <p className='text-rose-600 dark:text-rose-500'>{`${payload[0].dataKey}: %${payload[0].value}`}</p>
-          <p className='text-emerald-600 dark:text-emerald-500'>{`${payload[1].dataKey}: %${payload[1].value}`}</p>
+          <p className='text-rose-600 dark:text-rose-500'>{`${first.dataKey}: %${first.value}`}</p>
+          <p className='text-emerald-600 dark:text-emerald-500'>{`${second.dataKey}: %${second.value}`}</p>
         </div>
       )
     }

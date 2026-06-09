@@ -1,8 +1,6 @@
-import { useTranslation } from '../../hooks/useTranslation'
+import { useTranslation } from '@/hooks/useTranslation'
 
-interface ProductBoxProps {}
-
-export default function ProductBox({}: ProductBoxProps) {
+export default function ProductBox() {
     const { t } = useTranslation()
     return (
         <div
