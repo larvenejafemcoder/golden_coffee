@@ -27,6 +27,7 @@ Welcome to the Golden Coffee Shop documentation. This guide covers everything fr
 | 16 | [Known Issues](./16-known-issues.md) | Limitations and known problems |
 | 17 | [Roadmap](./17-roadmap.md) | Future recommendations |
 | 18 | [Code Examples](./18-code-examples.md) | Common task code snippets |
+| — | [Diagrams](./diagrams.md) | Mermaid architecture, route, data flow, and ER diagrams |
 
 ## Quick Start
 
